@@ -1,1 +1,204 @@
-[]
+[
+  {
+    "id": "wind-2027-campus-ai",
+    "company": "Wind 万得",
+    "recruitment_name": "Wind 2027年校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-22",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "上海",
+      "南京"
+    ],
+    "directions": [
+      "AI/机器学习",
+      "语音大模型",
+      "软件研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.wind.com.cn/portal/zh/JoinUs/recruit.html?channelPositionId=1164&positionType=9002",
+    "source_url": "https://www.wind.com.cn/portal/zh/JoinUs/recruit.html?channelPositionId=1164&positionType=9002",
+    "source_type": "企业官网",
+    "evidence_grade": "A",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 94,
+    "is_new_company": true,
+    "notes": "2027校招项目已由官网确认，但页面混有历史届别、实习和社招岗位，具体正式岗位需要逐岗复核。"
+  },
+  {
+    "id": "uisee-2027-autumn-campus",
+    "company": "驭势科技 UISEE",
+    "recruitment_name": "驭势科技2027届秋季校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-08-22",
+    "published_at": "2026-08-05",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "嘉善",
+      "重庆",
+      "武汉"
+    ],
+    "directions": [
+      "VLA/世界模型",
+      "感知算法",
+      "规划控制",
+      "定位算法",
+      "嵌入式软件"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.uisee.com/joinus.html",
+    "source_url": "https://jdjyw.jlu.edu.cn/mportal/recruit/details?id=33a818a3a36246f4baf78c30d48ac019",
+    "source_type": "高校就业网（含企业官网投递说明）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 95,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2026年9月至2027年6月毕业生，并列出VLA、世界模型、感知、规控、定位等正式岗位及北京、上海、深圳等地点；企业官网招聘入口可访问，具体岗位页需继续核验。"
+  },
+  {
+    "id": "iflytek-2027-autumn-campus",
+    "company": "科大讯飞",
+    "recruitment_name": "科大讯飞2027秋季校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-08-22",
+    "published_at": "2026-08-11",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "杭州",
+      "深圳",
+      "合肥",
+      "武汉"
+    ],
+    "directions": [
+      "AI研究算法",
+      "智能语音",
+      "大模型训练",
+      "AI研发",
+      "软件研发"
+    ],
+    "cohort": [
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://iflytek.zhiye.com/",
+    "source_url": "https://www.career.zju.edu.cn/jyxt/sczp/zpztgl/ckZpgwXq.zf?zpxxbh=58AF3E71172CE2E7E0653A68DD0E9B18",
+    "source_type": "高校就业网（含企业招聘系统入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 96,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确为全职秋招，允许2025年6月至2027年8月毕业者投递，覆盖研究算法、智能语音、大模型、AI研发和软件研发；企业招聘系统入口可访问，需继续拆解具体岗位与截止时间。"
+  },
+  {
+    "id": "realsil-2027-autumn-campus",
+    "company": "瑞昱半导体集团·瑞晟微电子",
+    "recruitment_name": "瑞昱半导体集团2027秋季校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-08-22",
+    "published_at": "2026-08-11",
+    "deadline": "待核实",
+    "cities": [
+      "苏州"
+    ],
+    "directions": [
+      "通信芯片",
+      "音视频",
+      "边缘智能",
+      "软件开发",
+      "IC设计/验证"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "外企",
+    "official_url": "https://www.realsil.com.cn/Home/Position",
+    "source_url": "https://www.realsil.com.cn/Home/NoteDetails/1011",
+    "source_type": "企业官网",
+    "evidence_grade": "A",
+    "status": "verified_recruitment",
+    "urgency": "high",
+    "match_score": 88,
+    "is_new_company": true,
+    "notes": "企业官网公告明确2027校园招聘，面向电子、计算机、通信、自动化等专业应届生；方向覆盖通信网络、音视频、边缘智能、软件开发及IC研发，当前工作地点为苏州；2026-08-12是网申开始时间。"
+  },
+  {
+    "id": "pxw-2027-campus",
+    "company": "深圳市鹏芯微集成电路制造有限公司",
+    "recruitment_name": "鹏芯微2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-22",
+    "published_at": "2026-08-17",
+    "deadline": "待核实",
+    "cities": [
+      "深圳"
+    ],
+    "directions": [
+      "半导体工艺研发",
+      "生产系统开发",
+      "硬件系统整合"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "央国企事业单位",
+    "official_url": "https://career.pxwsemi.com/",
+    "source_url": "https://career.hebut.edu.cn/home/correcruit/content/id/79153.html",
+    "source_type": "高校就业网（含企业官网投递入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 72,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确27届正式校招、深圳工作地点和2026年8月17日启动，企业官方校园招聘入口可访问；目前高匹配方向主要为生产系统开发和硬件系统整合，需逐岗确认软件与算法要求。"
+  },
+  {
+    "id": "ymtc-2027-early-campus",
+    "company": "长江存储",
+    "recruitment_name": "长江存储2027届提前批校园招聘",
+    "recruitment_type": "提前批",
+    "discovered_at": "2026-08-22",
+    "published_at": "2026-06-29",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "武汉",
+      "成都"
+    ],
+    "directions": [
+      "存储芯片",
+      "电路设计",
+      "器件开发",
+      "工艺技术"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "央国企事业单位",
+    "official_url": "https://ymtc-campus.zhiye.com/",
+    "source_url": "https://career.nankai.edu.cn/correcruit/content/id/116188.html",
+    "source_type": "高校就业网（含企业官网投递入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 76,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2027届本硕博、2026年6月29日发布，列出北京、上海、湖北、四川及电路、器件、工艺等提前批方向；企业官方校招系统可访问，需继续核验实时岗位和截止时间。"
+  }
+]
