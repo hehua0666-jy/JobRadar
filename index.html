@@ -11,7 +11,7 @@
 <div class="wrap">
 <section class="hero">
   <h1>JobRadar · 秋招情报与投递管理</h1>
-  <p>v1.0 Stable · 2027届正式秋招 / 提前批 / 应届岗 + 2026届未就业可投正式岗位；实习全部排除。</p>
+  <p>v1.1 Stable · 2027届正式秋招 / 提前批 / 应届岗 + 2026届未就业可投正式岗位；实习全部排除。</p>
   <div class="stats">
     <div class="stat"><b id="totalCount">-</b><span>数据库总条目</span></div>
     <div class="stat"><b id="actionableCount">-</b><span>主列表可行动</span></div>
@@ -79,6 +79,7 @@
       <button class="filter" data-filter="hardware">终端/硬件</button>
     </div>
     <div class="counter">当前显示 <b id="visibleCount">0</b> / <span id="visibleTotal">0</span> 条；筛选可组合。</div>
+    <div id="jobsLoadError" class="empty hidden" role="alert"></div>
   </div>
 
   <div id="priorityGroup" class="group"><h3>🔵 优先投递</h3><div id="priorityJobs" class="jobs"></div></div>

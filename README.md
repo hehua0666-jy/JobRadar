@@ -1,4 +1,4 @@
-# JobRadar v1.0
+# JobRadar v1.1
 
 面向秋招的个人岗位情报与投递管理工具，支持直接部署到 GitHub Pages。
 

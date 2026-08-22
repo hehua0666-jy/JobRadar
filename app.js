@@ -18,6 +18,12 @@ function loadApplied(){
 
 function isApplied(id){ return applied.has(id); }
 
+async function fetchJson(url){
+  const res = await fetch(url);
+  if(!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.json();
+}
+
 function buildTags(j){
   const t = [];
   const city = j.city || '';
@@ -217,8 +223,8 @@ async function renderWatch(){
   const grid = document.getElementById('watchGrid');
   if(!grid) return;
   try{
-    const res = await fetch('company_watch.json');
-    const items = await res.json();
+    const items = await fetchJson('company_watch.json');
+    if(!Array.isArray(items)) throw new Error('监控数据格式无效');
     grid.innerHTML = items.map(x => `<div class="watch-card">
       <div class="wc">${esc(x.company)} · ${esc(x.city)}</div>
       <div class="ws">${esc(x.status)}</div>
@@ -232,13 +238,25 @@ async function renderWatch(){
 
 async function init(){
   loadApplied();
-  const res = await fetch('jobs.json');
-  JOBS = await res.json();
+  initFilters();
+  initViewToggle();
+
+  const errorBox = document.getElementById('jobsLoadError');
+  try{
+    const items = await fetchJson('jobs.json');
+    if(!Array.isArray(items)) throw new Error('岗位数据格式无效');
+    JOBS = items;
+  } catch(e){
+    JOBS = [];
+    if(errorBox){
+      errorBox.textContent = '岗位数据加载失败，请稍后刷新页面。';
+      errorBox.classList.remove('hidden');
+    }
+  }
+
   renderStats();
   renderJobs();
   renderApplied();
-  initFilters();
-  initViewToggle();
   renderWatch();
   applyFilters();
 }
@@ -248,8 +266,8 @@ async function renderChanges(){
   const box=document.getElementById('changeList');
   if(!box)return;
   try{
-    const res=await fetch('changes.json?ts='+Date.now());
-    const items=await res.json();
+    const items=await fetchJson('changes.json?ts='+Date.now());
+    if(!Array.isArray(items)) throw new Error('变化数据格式无效');
     const counts={new:0,updated:0,closed:0};
     items.forEach(x=>counts[x.type]=(counts[x.type]||0)+1);
     document.getElementById('changeNew').textContent=counts.new||0;
