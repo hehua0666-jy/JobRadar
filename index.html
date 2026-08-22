@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="JobRadar：个人秋招岗位情报与投递管理工具">
-<title>JobRadar v1.1 · 秋招情报与投递管理</title>
+<title>JobRadar v1.2 · 秋招情报与投递管理</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
 <section class="hero">
   <h1>JobRadar · 秋招情报与投递管理</h1>
-  <p>v1.1 Stable · 2027届正式秋招 / 提前批 / 应届岗 + 2026届未就业可投正式岗位；实习全部排除。</p>
+  <p>v1.2 Stable · 2027届正式秋招 / 提前批 / 应届岗 + 2026届未就业可投正式岗位；实习全部排除。</p>
   <div class="stats">
     <div class="stat"><b id="totalCount">-</b><span>数据库总条目</span></div>
     <div class="stat"><b id="actionableCount">-</b><span>主列表可行动</span></div>
@@ -45,6 +45,25 @@
 <section class="sec">
   <h2>本周 TOP 5</h2>
   <div id="topGrid" class="topgrid"></div>
+</section>
+
+<section class="lead-panel" aria-labelledby="leadTitle">
+  <div class="lead-head">
+    <h2 id="leadTitle">新秋招公司雷达</h2>
+    <div class="lead-summary">
+      <span>今日新增 <b id="leadTodayCount">0</b></span>
+      <span>待核验 <b id="leadPendingCount">0</b></span>
+      <span>已确认 <b id="leadConfirmedCount">0</b></span>
+    </div>
+  </div>
+  <div class="lead-controls" aria-label="招聘线索筛选">
+    <button class="lead-filter" data-lead-filter="new">只看新发现</button>
+    <button class="lead-filter" data-lead-filter="pending">只看待核验</button>
+    <button class="lead-filter" data-lead-filter="confirmed">只看已确认</button>
+  </div>
+  <div id="leadList" class="lead-list" aria-live="polite">
+    <div class="empty">正在加载招聘线索…</div>
+  </div>
 </section>
 
 <section class="sec">
@@ -100,7 +119,7 @@
   </div>
 </section>
 
-<footer>JobRadar v1.1 Change Tracking · GitHub Pages-ready · 2026-08-22</footer>
+<footer>JobRadar v1.2 Recruitment Leads · GitHub Pages-ready · 2026-08-22</footer>
 </div>
 <script src="app.js"></script>
 </body>

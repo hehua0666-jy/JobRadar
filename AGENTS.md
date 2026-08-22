@@ -60,6 +60,7 @@ Agent 不应把代码维护任务扩展成未经授权的招聘结论生成，�
 - `app.js`：加载数据，生成统计与岗位卡片，处理组合筛选、视图切换、投递标记、观察名单和变化雷达。
 - `jobs.json`：当前正式岗位数据源。
 - `company_watch.json`：重点公司及招聘入口监控列表。
+- `recruitment_leads.json`：已经发现、等待核验或岗位拆分的公司级招聘事件。
 - `changes.json`：最近一次岗位数据的新增、更新和下架变化。
 - `data/jobs_previous.json`：变化检测所使用的上一版岗位快照。
 - `scan_meta.json`：扫描元数据和字段语义说明。
@@ -67,7 +68,7 @@ Agent 不应把代码维护任务扩展成未经授权的招聘结论生成，�
 - `tools/diff_jobs.py`：比较当前岗位库与旧快照，生成变化记录并更新快照。
 - `.github/workflows/update-changes.yml`：在 `jobs.json` 更新或手动触发时运行变化检测并提交生成文件。
 
-网页通过 `fetch()` 加载 `jobs.json`、`company_watch.json` 和 `changes.json`。已投递岗位 ID 与卡片/列表视图偏好只保存在浏览器 `localStorage`，不应误认为它们已同步到仓库或其他设备。
+网页通过 `fetch()` 加载 `jobs.json`、`company_watch.json`、`recruitment_leads.json` 和 `changes.json`。招聘情报遵循“搜索发现 → `recruitment_leads.json` → 官网核验 / 岗位拆分 → `jobs.json`”；不得自动跳过核验。已投递岗位 ID 与卡片/列表视图偏好只保存在浏览器 `localStorage`，不应误认为它们已同步到仓库或其他设备。
 
 ## UI 原则
 
@@ -83,6 +84,7 @@ Agent 不应把代码维护任务扩展成未经授权的招聘结论生成，�
 
 - `jobs.json` 是正式岗位数据的唯一当前来源；不要在代码中另建隐式岗位清单。
 - `company_watch.json` 只用于重点公司、招聘项目或入口监控，不等同于已确认岗位。
+- `recruitment_leads.json` 用于具体公司级招聘事件，不等同于可投递岗位，也不得自动转入 `jobs.json`。
 - `changes.json` 用于展示岗位数据变化，不应被当作完整历史数据库。
 - 岗位 `id` 应稳定且唯一；更新既有岗位时避免无理由更换 ID。
 - `status`、`display_status`、`level`、`evidence_grade`、`first_seen`、`last_verified`、截止时间等字段必须保持明确、一致的语义。

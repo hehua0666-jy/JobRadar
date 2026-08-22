@@ -134,3 +134,17 @@ body.list-mode .btn{font-size:8px;padding:3px 5px}
 .change-list{display:grid;grid-template-columns:repeat(2,1fr);gap:5px}.change-row{font-size:10px;background:#f8fafc;border-radius:7px;padding:6px 7px;display:flex;gap:6px;align-items:center}
 .change-row .ctype{font-weight:800;min-width:38px}.change-row a{color:#2563eb;text-decoration:none}
 @media(max-width:650px){.change-list{grid-template-columns:1fr}}
+
+.lead-panel{margin-top:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px}
+.lead-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}.lead-head h2{font-size:14px;margin:0}
+.lead-summary{display:flex;gap:5px;flex-wrap:wrap}.lead-summary span{font-size:9.5px;background:#f1f4f7;color:#596273;border-radius:999px;padding:3px 6px}
+.lead-controls{display:flex;gap:5px;flex-wrap:wrap;margin:6px 0}
+.lead-filter{border:1px solid #d5dbe4;background:#fff;color:#475467;padding:4px 7px;border-radius:999px;font-size:9.5px;cursor:pointer}
+.lead-filter.active{background:#172033;border-color:#172033;color:#fff}
+.lead-list{display:grid;gap:3px}.lead-row{display:flex;align-items:center;gap:6px;flex-wrap:wrap;background:#f8fafc;border-radius:6px;padding:4px 6px;font-size:9.5px;line-height:1.25}
+.lead-new{font-size:8px;font-weight:800;color:#087452;background:#eaf8f2;border-radius:4px;padding:2px 4px}.lead-new.muted{color:#667085;background:#edf0f3}
+.lead-company{width:92px;color:#2563eb}.lead-name{flex:1 1 165px;font-weight:700}.lead-cities{flex:1 1 105px;color:#596273}.lead-directions{flex:1 1 105px;color:#596273}
+.lead-grade,.lead-status,.lead-urgency{font-size:8.5px;border-radius:999px;padding:2px 5px;white-space:nowrap}.lead-grade{background:#eaf8f2;color:#087452}.grade-B,.grade-C{background:#fff3df;color:#9a5804}
+.lead-status{background:#edf3ff;color:#455e9b}.lead-urgency{background:#f1f4f7;color:#596273}.urgency-high{background:#ffeded;color:#a83b3b}.urgency-medium{background:#fff3df;color:#9a5804}
+.lead-link{font-size:9px;color:#2563eb;text-decoration:none;white-space:nowrap}.lead-link.muted{color:#98a2b3}
+@media(max-width:600px){.lead-company{width:75px}.lead-name{flex-basis:calc(100% - 125px)}.lead-cities,.lead-directions{flex-basis:calc(50% - 8px)}}

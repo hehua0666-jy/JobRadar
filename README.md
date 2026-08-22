@@ -1,4 +1,4 @@
-# JobRadar v1.1
+# JobRadar v1.2
 
 面向秋招的个人岗位情报与投递管理工具，支持直接部署到 GitHub Pages。
 
@@ -16,6 +16,7 @@
 - 证据等级：A / B / C
 - 具体岗位与项目级入口区分
 - 本周新增、临近截止、未投递等工作流筛选
+- 新秋招公司雷达：承接新发现的公司级招聘事件并跟踪核验状态
 
 ## 文件结构
 
@@ -23,7 +24,9 @@
 - `style.css`：样式
 - `app.js`：页面交互与筛选
 - `jobs.json`：岗位数据库
-- `company_watch.json`：外企重点监控
+- `company_watch.json`：长期关注但尚未确认新招聘事件的公司
+- `recruitment_leads.json`：已发现的公司级秋招 / 提前批 / 校招事件
+- `tools/validate_recruitment_leads.py`：招聘线索数据校验
 - `scan_meta.json`：扫描与更新元数据
 - `README.md`：说明文档
 
@@ -32,6 +35,18 @@
 - **A级**：企业官网具体正式岗位已核验
 - **B级**：具体岗位存在，但当前开放状态等仍需复核
 - **C级**：招聘项目、公司池或重点监控入口
+
+## 招聘情报流程
+
+```text
+搜索发现 → recruitment_leads.json → 官网核验 / 岗位拆分 → jobs.json
+```
+
+- `company_watch.json` 保存长期监控对象，不表示已经发现新的招聘事件。
+- `recruitment_leads.json` 保存人工或 ChatGPT 已发现的具体招聘事件及核验进度。
+- `jobs.json` 只保存经过核验后真正值得投递的岗位。
+
+未经核验的招聘线索不得自动写入 `jobs.json`。当前流程不执行自动联网搜索或企业官网抓取。
 
 ## 本地预览
 
@@ -79,3 +94,9 @@ http://localhost:8000
 - 网页顶部新增“岗位变化雷达”
 
 注意：该流程负责比较与展示变化，不负责自动抓取全部企业官网；后续需要继续为不同招聘系统增加采集/核验逻辑。
+
+## v1.2 新秋招公司发现与核验
+
+- 新增独立的 `recruitment_leads.json` 公司级招聘事件池。
+- 新增紧凑的“新秋招公司雷达”、内部状态筛选与优先级排序。
+- 新增 `tools/validate_recruitment_leads.py`，用于结构、枚举、URL 和重复线索校验。

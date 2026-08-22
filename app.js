@@ -2,8 +2,10 @@ const STORAGE_KEY = 'jobradar_applied_v1';
 const VIEW_KEY = 'jobradar_view_v1';
 
 let JOBS = [];
+let RECRUITMENT_LEADS = [];
 let applied = new Set();
 let activeFilters = new Set();
+let activeLeadFilter = null;
 
 function esc(s){
   return String(s ?? '').replace(/[&<>"']/g, m => ({
@@ -22,6 +24,118 @@ async function fetchJson(url){
   const res = await fetch(url);
   if(!res.ok) throw new Error(`HTTP ${res.status}`);
   return res.json();
+}
+
+function safeHttpUrl(value){
+  try{
+    const url = new URL(String(value));
+    return ['http:','https:'].includes(url.protocol) ? url.href : '';
+  } catch(e){
+    return '';
+  }
+}
+
+function localDateString(){
+  const now = new Date();
+  const pad = value => String(value).padStart(2,'0');
+  return `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}`;
+}
+
+function leadIsPending(lead){
+  return ['discovered','needs_role_review'].includes(lead.status);
+}
+
+function leadIsConfirmed(lead){
+  return ['verified_recruitment','converted'].includes(lead.status);
+}
+
+function sortRecruitmentLeads(items){
+  const urgencyRank = {high:3,medium:2,low:1};
+  const dateValue = lead => {
+    const dates = [lead.published_at,lead.discovered_at]
+      .filter(x => /^\d{4}-\d{2}-\d{2}$/.test(x || ''));
+    return dates.sort().at(-1) || '';
+  };
+  return [...items].sort((a,b) =>
+    (urgencyRank[b.urgency] || 0) - (urgencyRank[a.urgency] || 0) ||
+    Number(Boolean(b.is_new_company)) - Number(Boolean(a.is_new_company)) ||
+    Number(b.match_score || 0) - Number(a.match_score || 0) ||
+    dateValue(b).localeCompare(dateValue(a))
+  );
+}
+
+function leadMatchesFilter(lead){
+  if(activeLeadFilter === 'new') return lead.is_new_company === true;
+  if(activeLeadFilter === 'pending') return leadIsPending(lead);
+  if(activeLeadFilter === 'confirmed') return leadIsConfirmed(lead);
+  return true;
+}
+
+function renderRecruitmentLeads(){
+  const list = document.getElementById('leadList');
+  if(!list) return;
+
+  const set = (id,value) => {
+    const el = document.getElementById(id);
+    if(el) el.textContent = value;
+  };
+  set('leadTodayCount', RECRUITMENT_LEADS.filter(x=>x.discovered_at===localDateString()).length);
+  set('leadPendingCount', RECRUITMENT_LEADS.filter(leadIsPending).length);
+  set('leadConfirmedCount', RECRUITMENT_LEADS.filter(leadIsConfirmed).length);
+
+  const items = sortRecruitmentLeads(RECRUITMENT_LEADS).filter(leadMatchesFilter);
+  if(!items.length){
+    list.innerHTML = `<div class="empty">${RECRUITMENT_LEADS.length ? '当前筛选下没有招聘线索。' : '当前没有待处理的招聘线索。'}</div>`;
+    return;
+  }
+
+  const statusLabels = {
+    discovered:'待核验',verified_recruitment:'已确认',needs_role_review:'待拆岗位',
+    converted:'已岗位化',rejected:'已排除'
+  };
+  const urgencyLabels = {high:'高',medium:'中',low:'低'};
+  list.innerHTML = items.map(lead => {
+    const url = safeHttpUrl(lead.official_url) || safeHttpUrl(lead.source_url);
+    const cities = Array.isArray(lead.cities) ? lead.cities.join('/') : '';
+    const directions = Array.isArray(lead.directions) ? lead.directions.join('/') : '';
+    return `<div class="lead-row" title="${esc(lead.notes || '')}">
+      <span class="lead-new ${lead.is_new_company ? '' : 'muted'}">${lead.is_new_company ? 'NEW' : '跟进'}</span>
+      <b class="lead-company">${esc(lead.company)}</b>
+      <span class="lead-name">${esc(lead.recruitment_name)}</span>
+      <span class="lead-cities">${esc(cities || '城市待核实')}</span>
+      <span class="lead-directions">${esc(directions || '方向待核实')}</span>
+      <span class="lead-grade grade-${esc(lead.evidence_grade)}">官网${esc(lead.evidence_grade)}级</span>
+      <span class="lead-status">${esc(statusLabels[lead.status] || lead.status)}</span>
+      <span class="lead-urgency urgency-${esc(lead.urgency)}">${esc(urgencyLabels[lead.urgency] || lead.urgency)}</span>
+      ${url ? `<a class="lead-link" href="${esc(url)}" target="_blank" rel="noopener">查看 ↗</a>` : '<span class="lead-link muted">无链接</span>'}
+    </div>`;
+  }).join('');
+}
+
+function initLeadFilters(){
+  document.querySelectorAll('.lead-filter').forEach(btn => {
+    btn.onclick = () => {
+      activeLeadFilter = activeLeadFilter === btn.dataset.leadFilter ? null : btn.dataset.leadFilter;
+      document.querySelectorAll('.lead-filter').forEach(x =>
+        x.classList.toggle('active', x.dataset.leadFilter === activeLeadFilter)
+      );
+      renderRecruitmentLeads();
+    };
+  });
+}
+
+async function loadRecruitmentLeads(){
+  const list = document.getElementById('leadList');
+  if(!list) return;
+  try{
+    const items = await fetchJson('recruitment_leads.json');
+    if(!Array.isArray(items)) throw new Error('招聘线索数据格式无效');
+    RECRUITMENT_LEADS = items;
+    renderRecruitmentLeads();
+  } catch(e){
+    RECRUITMENT_LEADS = [];
+    list.innerHTML = '<div class="empty">招聘线索加载失败，请稍后刷新页面。</div>';
+  }
 }
 
 function buildTags(j){
@@ -240,6 +354,8 @@ async function init(){
   loadApplied();
   initFilters();
   initViewToggle();
+  initLeadFilters();
+  loadRecruitmentLeads();
 
   const errorBox = document.getElementById('jobsLoadError');
   try{
