@@ -1,0 +1,44 @@
+[
+  {
+    "company": "Apple",
+    "city": "北京 / 上海",
+    "status": "重点监控",
+    "note": "中国官网当前有北京 Machine Learning Engineer 等正式全职AI岗位，但未明确标注2027 Graduate，因此暂不混入校招主列表。",
+    "url": "https://jobs.apple.com/en-us/search?location=china-CHNC&team=machine-learning-and-ai-SFTWR-MCHLN"
+  },
+  {
+    "company": "Arm",
+    "city": "上海",
+    "status": "9月起重点监控",
+    "note": "Arm Graduate Program 官方说明下一批 Graduate opportunities 从 2026年9月开始开放；当前中国岗位列表已有上海岗位。",
+    "url": "https://careers.arm.com/graduates"
+  },
+  {
+    "company": "Microsoft",
+    "city": "北京 / 上海",
+    "status": "重点监控",
+    "note": "持续关注中国区 University / Early in Profession 正式岗位；本轮未找到足够明确的2027中国具体岗位页，因此不提前收录。",
+    "url": "https://jobs.careers.microsoft.com/global/en/search"
+  },
+  {
+    "company": "Qualcomm 高通",
+    "city": "北京 / 上海 / 深圳",
+    "status": "重点监控",
+    "note": "与你的通信、DSP、信号处理背景高度相关；持续监控 New Grad / Engineer 正式岗位。",
+    "url": "https://careers.qualcomm.com/"
+  },
+  {
+    "company": "Dolby 杜比",
+    "city": "北京 / 上海",
+    "status": "重点监控",
+    "note": "Audio / Speech / Signal Processing 与你的方向高度相关，后续优先检查Graduate或Entry-level正式岗位。",
+    "url": "https://www.dolby.com/careers/"
+  },
+  {
+    "company": "Intel / AMD",
+    "city": "上海 / 北京 / 深圳",
+    "status": "重点监控",
+    "note": "重点关注AI软件、编译器、GPU/加速计算、算法与研发类New Grad岗位。",
+    "url": "https://jobs.intel.com/"
+  }
+]

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="JobRadar：个人秋招岗位情报与投递管理工具">
+<title>JobRadar v1.0 · 秋招情报与投递管理</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<section class="hero">
+  <h1>JobRadar · 秋招情报与投递管理</h1>
+  <p>v1.0 Stable · 2027届正式秋招 / 提前批 / 应届岗 + 2026届未就业可投正式岗位；实习全部排除。</p>
+  <div class="stats">
+    <div class="stat"><b id="totalCount">-</b><span>数据库总条目</span></div>
+    <div class="stat"><b id="actionableCount">-</b><span>主列表可行动</span></div>
+    <div class="stat"><b id="watchCount">-</b><span>观察/待核验</span></div>
+    <div class="stat"><b id="verifiedCount">-</b><span>官网A级核验</span></div>
+    <div class="stat"><b id="priorityCount">-</b><span>优先投递</span></div>
+    <div class="stat"><b id="recentCount">-</b><span>近期新增/启动</span></div>
+    <div class="stat"><b id="stateCount">-</b><span>央国企事业单位</span></div>
+    <div class="stat"><b id="foreignCount">-</b><span>外企</span></div>
+  </div>
+</section>
+
+<section class="panel">
+  <h2>已投递公司</h2>
+  <div id="companyEmpty" class="empty">点击岗位左侧圆圈标记“已投递”；状态保存在当前浏览器中。</div>
+  <div id="companyList" class="company-list"></div>
+  <div style="height:6px"></div>
+  <div id="roleList" class="role-list"></div>
+</section>
+
+<section class="sec">
+  <h2>本周 TOP 5</h2>
+  <div id="topGrid" class="topgrid"></div>
+</section>
+
+<section class="sec">
+  <div class="toolbar">
+    <div class="view-toggle">
+      <button class="view-btn active" data-view="cards">卡片模式</button>
+      <button class="view-btn" data-view="list">列表模式</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter" data-filter="priority">优先投递</button>
+      <button class="filter" data-filter="newweek">本周新增/启动</button>
+      <button class="filter" data-filter="actionable">主列表可行动</button>
+      <button class="filter" data-filter="watchonly">观察/待核验</button>
+      <button class="filter" data-filter="notapplied">未投递</button>
+      <button class="filter" data-filter="appliedonly">已投递</button>
+      <button class="filter" data-filter="positiononly">具体岗位</button>
+      <button class="filter" data-filter="verifiedonly">官网A级核验</button>
+      <button class="filter" data-filter="signalfit">语音/音频/信号处理</button>
+      <button class="filter" data-filter="ai">AI相关</button>
+      <button class="filter" data-filter="deadline">临近截止</button>
+      <button class="filter" data-filter="beijing">北京</button>
+      <button class="filter" data-filter="shanghai">上海</button>
+      <button class="filter" data-filter="hangzhou">杭州</button>
+      <button class="filter" data-filter="shenzhen">深圳</button>
+      <button class="filter" data-filter="private">私企</button>
+      <button class="filter" data-filter="state">央国企事业单位</button>
+      <button class="filter" data-filter="foreign">外企</button>
+      <button class="filter" data-filter="research">研究院/科研机构</button>
+      <button class="filter" data-filter="auto">汽车/智驾</button>
+      <button class="filter" data-filter="internet">互联网/AI</button>
+      <button class="filter" data-filter="hardware">终端/硬件</button>
+    </div>
+    <div class="counter">当前显示 <b id="visibleCount">0</b> / <span id="visibleTotal">0</span> 条；筛选可组合。</div>
+  </div>
+
+  <div id="priorityGroup" class="group"><h3>🔵 优先投递</h3><div id="priorityJobs" class="jobs"></div></div>
+  <div id="recentGroup" class="group"><h3>🟢 近期新增 / 近期确认开放</h3><div id="recentJobs" class="jobs"></div></div>
+  <div id="stateGroup" class="group"><h3>🟣 央国企 / 研究院 / 事业单位</h3><div id="stateJobs" class="jobs"></div></div>
+  <div id="foreignGroup" class="group"><h3>🌍 外企 / 跨国公司</h3><div id="foreignJobs" class="jobs"></div></div>
+  <div id="otherGroup" class="group"><h3>⚪ 其他匹配岗位</h3><div id="otherJobs" class="jobs"></div></div>
+  <div id="watchOnlyGroup" class="group"><h3>👁 观察名单 / 项目级 / 待进一步核验</h3><div id="watchJobs" class="jobs"></div></div>
+
+  <div class="group">
+    <h3>👀 外企重点监控</h3>
+    <div id="watchGrid" class="watch-grid"></div>
+  </div>
+
+  <div class="note">
+    <b>使用说明：</b>推荐理由通过鼠标悬停岗位卡片查看；点击左侧圆圈可标记已投递。A级表示企业官网具体正式岗位已核验；B/C级表示仍需进一步核实或属于项目级入口。<br>
+    <b>免责声明：</b>本站仅用于个人求职信息整理与导航。招聘信息来自企业公开招聘渠道，岗位详情、招聘要求、截止时间及申请状态请以企业官方招聘网站实时内容为准。本站与所列企业无官方隶属或合作关系。
+  </div>
+</section>
+
+<footer>JobRadar v1.0 Stable · GitHub Pages-ready · 2026-08-22</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

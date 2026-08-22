@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "last_scan": "2026-08-22",
+  "fields": {
+    "first_seen": "首次发现日期",
+    "last_verified": "最后核验日期",
+    "status": "open / verify / closed",
+    "level": "position=具体岗位 / project=招聘项目"
+  },
+  "next_scan_goal": "将集团/项目级条目逐步替换或补充为企业官网具体岗位页，并检测新增、更新、下架。"
+}
