@@ -1,7 +1,7 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "release_date": "2026-08-22",
   "status": "stable",
-  "job_records": 85,
-  "notes": "Stable GitHub Pages release."
+  "feature": "change_tracking",
+  "job_records": 85
 }

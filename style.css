@@ -126,3 +126,11 @@ body.list-mode .btn{font-size:8px;padding:3px 5px}
 }
 
 #watchJobs .job{opacity:.82;background:#fafbfc} #watchJobs .job:hover{opacity:1}
+
+.change-panel{margin-top:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px}
+.change-panel h2{font-size:14px;margin:0 0 7px}.change-summary{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:7px}
+.change-pill{font-size:10px;border-radius:999px;padding:4px 7px;background:#f1f4f7;color:#475467}
+.change-pill.new{background:#eaf8f2;color:#087452}.change-pill.updated{background:#fff3df;color:#9a5804}.change-pill.closed{background:#ffeded;color:#a83b3b}
+.change-list{display:grid;grid-template-columns:repeat(2,1fr);gap:5px}.change-row{font-size:10px;background:#f8fafc;border-radius:7px;padding:6px 7px;display:flex;gap:6px;align-items:center}
+.change-row .ctype{font-weight:800;min-width:38px}.change-row a{color:#2563eb;text-decoration:none}
+@media(max-width:650px){.change-list{grid-template-columns:1fr}}

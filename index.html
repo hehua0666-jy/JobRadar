@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="JobRadar：个人秋招岗位情报与投递管理工具">
-<title>JobRadar v1.0 · 秋招情报与投递管理</title>
+<title>JobRadar v1.1 · 秋招情报与投递管理</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,6 +22,16 @@
     <div class="stat"><b id="stateCount">-</b><span>央国企事业单位</span></div>
     <div class="stat"><b id="foreignCount">-</b><span>外企</span></div>
   </div>
+</section>
+
+<section class="change-panel">
+<h2>岗位变化雷达</h2>
+<div class="change-summary">
+<span class="change-pill new">新增 <b id="changeNew">0</b></span>
+<span class="change-pill updated">更新 <b id="changeUpdated">0</b></span>
+<span class="change-pill closed">下架 <b id="changeClosed">0</b></span>
+</div>
+<div id="changeList" class="change-list"></div>
 </section>
 
 <section class="panel">
@@ -89,7 +99,7 @@
   </div>
 </section>
 
-<footer>JobRadar v1.0 Stable · GitHub Pages-ready · 2026-08-22</footer>
+<footer>JobRadar v1.1 Change Tracking · GitHub Pages-ready · 2026-08-22</footer>
 </div>
 <script src="app.js"></script>
 </body>

@@ -244,3 +244,20 @@ async function init(){
 }
 
 init();
+async function renderChanges(){
+  const box=document.getElementById('changeList');
+  if(!box)return;
+  try{
+    const res=await fetch('changes.json?ts='+Date.now());
+    const items=await res.json();
+    const counts={new:0,updated:0,closed:0};
+    items.forEach(x=>counts[x.type]=(counts[x.type]||0)+1);
+    document.getElementById('changeNew').textContent=counts.new||0;
+    document.getElementById('changeUpdated').textContent=counts.updated||0;
+    document.getElementById('changeClosed').textContent=counts.closed||0;
+    const labels={new:'新增',updated:'更新',closed:'下架'};
+    if(!items.length){box.innerHTML='<div class="empty">当前没有检测到新增、更新或下架变化。</div>';return;}
+    box.innerHTML=items.slice(0,20).map(x=>`<div class="change-row"><span class="ctype">${labels[x.type]||x.type}</span><span><b>${esc(x.company)}</b> · ${esc(x.role)}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">查看 ↗</a>`:''}</div>`).join('');
+  }catch(e){box.innerHTML='<div class="empty">变化记录暂时无法加载。</div>';}
+}
+window.addEventListener('load',renderChanges);
