@@ -200,5 +200,532 @@
     "match_score": 76,
     "is_new_company": true,
     "notes": "高校就业网公告明确面向2027届本硕博、2026年6月29日发布，列出北京、上海、湖北、四川及电路、器件、工艺等提前批方向；企业官方校招系统可访问，需继续核验实时岗位和截止时间。"
+  },
+  {
+    "id": "minimax-2027-campus",
+    "company": "MiniMax",
+    "recruitment_name": "MiniMax 2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "待核实"
+    ],
+    "directions": [
+      "大模型算法",
+      "机器学习系统",
+      "AI应用与产品"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.minimaxi.com/careers",
+    "source_url": "https://www.minimaxi.com/careers",
+    "source_type": "企业官网",
+    "evidence_grade": "A",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 98,
+    "is_new_company": true,
+    "notes": "企业官网明确列出面向2027届毕业生的应届生招聘，并展示算法与模型、机器学习系统、AI应用与产品等方向；具体岗位、工作城市、启动时间和截止时间仍需从投递系统逐项核验。"
+  },
+  {
+    "id": "spirit-ai-2027-global-campus",
+    "company": "千寻智能 Spirit AI",
+    "recruitment_name": "千寻智能2027全球校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-08-17",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "杭州",
+      "深圳"
+    ],
+    "directions": [
+      "具身智能",
+      "VLA/世界模型",
+      "强化学习与运控",
+      "AI Infra",
+      "机器人软件"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://nwd4iy9rd2s.jobs.feishu.cn/campusofSpiritAI",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2407316.htm",
+    "source_type": "高校就业网（含企业官方招聘入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 97,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确为2027全球校园招聘，面向2026年9月至2027年12月毕业的海内外本硕博，列出预训练、后训练、世界模型、VLA、Agent、导航、强化学习运控及AI Infra等正式岗位；企业官网招聘页和官方飞书校招入口可访问，岗位城市与截止时间仍需逐项复核。"
+  },
+  {
+    "id": "hellogroup-2027-campus",
+    "company": "挚文集团",
+    "recruitment_name": "挚文集团2027届校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-08-10",
+    "deadline": "2026-10-31",
+    "cities": [
+      "北京"
+    ],
+    "directions": [
+      "语音算法",
+      "AI算法",
+      "机器学习",
+      "计算机视觉",
+      "流媒体研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://campus.hellogroup.com/",
+    "source_url": "https://myjob.dlmu.edu.cn/campus/view/id/868379",
+    "source_type": "高校就业网（含企业官网投递入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 93,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2026年12月至2027年8月毕业生的正式校招，8月10日启动、10月31日截止，包含语音、AI、推荐、视觉、机器学习及流媒体研发岗位；企业官方校招站可访问，需继续核验具体岗位页及实时开放状态。"
+  },
+  {
+    "id": "sugon-2027-campus",
+    "company": "中科曙光",
+    "recruitment_name": "中科曙光2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-08-20",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "杭州",
+      "深圳",
+      "天津",
+      "南京"
+    ],
+    "directions": [
+      "多模态算法",
+      "AI Agent",
+      "AI应用研发",
+      "高性能计算",
+      "云计算与软件研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "央国企事业单位",
+    "official_url": "https://go.sugon.com/campus",
+    "source_url": "https://career.hebut.edu.cn/home/correcruit/content/id/79325.html",
+    "source_type": "高校就业网（含企业官网投递入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 91,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2027年毕业的应届硕博，岗位包含多模态算法、AI Agent、AI服务与应用研发、HPC调度和云计算研发，工作地点覆盖北京、上海、杭州、深圳等；企业官网说明招聘渠道规则，官方校园招聘入口可访问，具体岗位页和截止时间仍需复核。"
+  },
+  {
+    "id": "cetc38-2027-campus",
+    "company": "中国电科第三十八研究所",
+    "recruitment_name": "中国电科第三十八研究所2027届校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-08-20",
+    "deadline": "待核实",
+    "cities": [
+      "合肥"
+    ],
+    "directions": [
+      "信号处理算法",
+      "人工智能算法",
+      "雷达探测感知",
+      "系统仿真",
+      "软件研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "央国企事业单位",
+    "official_url": "https://cetc38.zhaopin.com/",
+    "source_url": "https://career.nankai.edu.cn/correcruit/content/id/116723.html",
+    "source_type": "高校就业网（含单位招聘入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 96,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确为2027届校园招聘，列出信号处理算法、人工智能算法、雷达探测感知实验室系统设计与仿真等正式岗位，专业覆盖信号与信息处理、通信、模式识别和软件等；38所官网及招聘入口可访问，截止时间和岗位实时开放状态仍需核验。"
+  },
+  {
+    "id": "mthreads-2027-global-campus",
+    "company": "摩尔线程",
+    "recruitment_name": "摩尔线程2027届全球校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-08-21",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "杭州",
+      "无锡",
+      "武汉",
+      "西安",
+      "成都",
+      "南京"
+    ],
+    "directions": [
+      "大模型训练与推理",
+      "AI算法与Agent",
+      "算子与编译",
+      "驱动与系统软件",
+      "GPU芯片研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.mthreads.com/jobs",
+    "source_url": "https://finance.sina.com.cn/7x24/2026-08-22/doc-inipcwvz1323828.shtml",
+    "source_type": "权威媒体报道（含企业官网招聘入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 98,
+    "is_new_company": true,
+    "notes": "媒体报道明确企业于2026年8月21日启动2027届全球校招，面向海内外本硕博，开放大模型训练/推理/算法、Agent、智算平台、驱动、算子与编译、网络通信及芯片研发等正式职类；企业官网校园招聘入口可访问，需继续核验具体岗位页和截止时间。"
+  },
+  {
+    "id": "chipsea-2027-global-campus",
+    "company": "芯海科技",
+    "recruitment_name": "芯海科技2027届全球校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-08-21",
+    "deadline": "待核实",
+    "cities": [
+      "深圳",
+      "北京",
+      "上海",
+      "成都",
+      "合肥",
+      "西安"
+    ],
+    "directions": [
+      "模拟与混合信号芯片",
+      "数字IC与FPGA",
+      "嵌入式开发",
+      "芯片测试开发",
+      "AI边缘计算"
+    ],
+    "cohort": [
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://chipsea.zhiye.com/",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2407409.htm",
+    "source_type": "高校就业网（含企业招聘系统入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 86,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确为2027届全球校招，国内毕业时间为2027年全年、海外为2026年1月至2027年12月，列出模拟/数字IC、FPGA、嵌入式和芯片测试开发等正式岗位；企业招聘系统可访问，具体岗位与截止时间仍需逐项核验。"
+  },
+  {
+    "id": "skyverse-2027-campus",
+    "company": "中科飞测",
+    "recruitment_name": "中科飞测2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-08-17",
+    "deadline": "待核实",
+    "cities": [
+      "深圳",
+      "上海",
+      "北京",
+      "广州",
+      "武汉",
+      "成都",
+      "长春",
+      "合肥"
+    ],
+    "directions": [
+      "大数据检测算法",
+      "光学检测",
+      "自动化控制软件",
+      "系统研发",
+      "集成电路量检测"
+    ],
+    "cohort": [
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://job.skyverse.cn/req/campus-index",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2407324.htm",
+    "source_type": "高校就业网（含企业官网投递入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 92,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2026年1月至2027年12月毕业的海内外应届生，开放算法、软件、系统、光学等正式方向，覆盖深圳、上海、北京等地；企业官网校园招聘入口可访问，岗位细节与截止时间仍需核验。"
+  },
+  {
+    "id": "racobit-2027-campus",
+    "company": "北京理工雷科",
+    "recruitment_name": "理工雷科2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-08-11",
+    "deadline": "2026-12-31",
+    "cities": [
+      "北京",
+      "天津",
+      "西安"
+    ],
+    "directions": [
+      "雷达算法",
+      "信号处理",
+      "AI应用",
+      "GPU软件",
+      "FPGA与嵌入式"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.racobit.com/",
+    "source_url": "https://career.hebut.edu.cn/home/correcruit/content/id/79112.html",
+    "source_type": "高校就业网（含企业官方招聘平台说明）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 97,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确为2027届校园招聘，列出雷达算法、AI应用、GPU软件、FPGA、嵌入式和大数据等正式岗位；另一高校页面标注招聘期至2026年12月31日，企业官网可访问，但网申主要通过官方招聘平台公众号，需继续核验实时岗位状态。"
+  },
+  {
+    "id": "sigmastar-2027-campus",
+    "company": "星宸科技 SigmaStar",
+    "recruitment_name": "星宸科技2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-07-31",
+    "deadline": "待核实",
+    "cities": [
+      "上海",
+      "厦门",
+      "深圳",
+      "成都",
+      "杭州"
+    ],
+    "directions": [
+      "图像与信号处理算法",
+      "AI与AI-ISP算法",
+      "3D感知",
+      "IPU编译工具链",
+      "嵌入式软件"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://sigmastar.zhiye.com/campus/jobs",
+    "source_url": "https://career.nankai.edu.cn/correcruit/content/id/116535.html",
+    "source_type": "高校就业网（含企业招聘系统入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 96,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2027届海内外毕业生，开放图像、信号处理、AI、AI-ISP、3D感知、IPU编译工具链和嵌入式软件等正式岗位；企业官方招聘系统可访问，截止时间和具体岗位页仍需核验。"
+  },
+  {
+    "id": "rigol-2027-campus",
+    "company": "普源精电 RIGOL",
+    "recruitment_name": "普源精电2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "苏州",
+      "北京",
+      "上海",
+      "西安",
+      "深圳"
+    ],
+    "directions": [
+      "AI与大模型开发",
+      "数字信号处理",
+      "FPGA",
+      "算法研发",
+      "嵌入式软件"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://rigolportal.jobs.feishu.cn/campus/",
+    "source_url": "https://campus.51job.com/rigol/about3.html",
+    "source_type": "企业校招专题（含企业招聘系统入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 96,
+    "is_new_company": true,
+    "notes": "企业品牌校招专题明确招募2027届毕业生，并列出AI开发、算法、FPGA、软件等岗位；其中AI岗位涉及大模型与仪器时序信号，FPGA岗位明确数字滤波、FFT和上下变频等DSP实现，企业飞书校招入口可访问，启动日和截止时间仍需核实。"
+  },
+  {
+    "id": "verisilicon-2027-campus",
+    "company": "芯原股份 VeriSilicon",
+    "recruitment_name": "芯原股份2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-07-23",
+    "deadline": "2026-08-23",
+    "cities": [
+      "上海",
+      "成都",
+      "南京",
+      "广州",
+      "海口"
+    ],
+    "directions": [
+      "算法研发",
+      "编译器",
+      "GPU/NPU/DSP/ISP",
+      "芯片架构",
+      "数字基带与射频"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.verisilicon.com/cn/RecruitCampus",
+    "source_url": "https://campus.51job.com/VeriSilicon2027/qa.html",
+    "source_type": "企业校招专题（与企业官网校招入口交叉核验）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 94,
+    "is_new_company": true,
+    "notes": "企业2027校招专题明确面向海内外2027届本硕博，开放算法、编译器、软件、架构、数字基带和芯片设计等正式岗位；页面说明未提前网申者可在笔试后于2026年8月23日24:00前补投，需立即核验是否仍可进入当前批次。"
+  },
+  {
+    "id": "xinen-2027-campus",
+    "company": "芯恩（青岛）集成电路",
+    "recruitment_name": "芯恩2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-08-06",
+    "deadline": "待核实",
+    "cities": [
+      "青岛"
+    ],
+    "directions": [
+      "智能制造算法",
+      "IT开发",
+      "集成电路研发",
+      "器件与工艺研发"
+    ],
+    "cohort": [
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://siencampus.hotjob.cn/",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2407207.htm",
+    "source_type": "高校就业网（含企业官方投递入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 80,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确国内2027年毕业生及2026年8月至2027年12月毕业的海外生可申请，包含智能制造算法、IT开发及集成电路研发等正式岗位；企业官网招聘动态与官方校招系统均可访问，截止时间和岗位实时状态仍需核验。"
+  },
+  {
+    "id": "intsig-2027-campus",
+    "company": "合合信息",
+    "recruitment_name": "合合信息2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "2026-07-31",
+    "deadline": "待核实",
+    "cities": [
+      "上海",
+      "苏州",
+      "广州"
+    ],
+    "directions": [
+      "多模态文本智能",
+      "OCR与文档AI",
+      "算法研发",
+      "软件研发",
+      "数据智能"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://intsig.zhiye.com/campus/jobs",
+    "source_url": "https://job.gzus.edu.cn/detail/online?id=3535670&menu_id=2400",
+    "source_type": "高校就业网（含企业招聘系统入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 94,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确合合信息2027届校招已启动，开放算法、技术等正式岗位，工作地点覆盖上海、苏州、广州；企业官网确认其多模态文本智能业务，官方校招系统可访问，具体算法岗位、届别边界与截止时间仍需逐项核验。"
+  },
+  {
+    "id": "smic-2027-campus",
+    "company": "中芯国际 SMIC",
+    "recruitment_name": "中芯国际2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-23",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "上海",
+      "北京",
+      "天津",
+      "深圳"
+    ],
+    "directions": [
+      "算法工程",
+      "智能制造算法",
+      "大数据工程",
+      "应用程序开发",
+      "集成电路研发"
+    ],
+    "cohort": [
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://smics.zhiye.com/campus/",
+    "source_url": "https://smics.zhiye.com/campus/?PageIndex=1&p=1%5E21%2C3%5E-1",
+    "source_type": "企业官方招聘系统",
+    "evidence_grade": "A",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 93,
+    "is_new_company": true,
+    "notes": "企业官方招聘系统明确列出2027届资格范围，并展示上海、北京、天津的软件算法类正式岗位，包括算法工程师、智能制造算法工程师、大数据工程师和应用程序开发工程师；同页还保留2026届资格范围，需按职位届别筛选并继续核验各岗位截止时间。"
   }
 ]
