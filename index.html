@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="JobRadar：个人秋招岗位情报与投递管理工具">
-<title>JobRadar v1.2 · 秋招情报与投递管理</title>
+<title>JobRadar v1.3 · 秋招情报与投递管理</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="wrap">
 <section class="hero">
   <h1>JobRadar · 秋招情报与投递管理</h1>
-  <p>v1.2 Stable · 2027届正式秋招 / 提前批 / 应届岗 + 2026届未就业可投正式岗位；实习全部排除。</p>
+  <p>v1.3 Stable · 2027届正式秋招 / 提前批 / 应届岗 + 2026届未就业可投正式岗位；实习全部排除。</p>
   <div class="stats">
     <div class="stat"><b id="totalCount">-</b><span>数据库总条目</span></div>
     <div class="stat"><b id="actionableCount">-</b><span>主列表可行动</span></div>
@@ -22,16 +22,6 @@
     <div class="stat"><b id="stateCount">-</b><span>央国企事业单位</span></div>
     <div class="stat"><b id="foreignCount">-</b><span>外企</span></div>
   </div>
-</section>
-
-<section class="change-panel">
-<h2>岗位变化雷达</h2>
-<div class="change-summary">
-<span class="change-pill new">新增 <b id="changeNew">0</b></span>
-<span class="change-pill updated">更新 <b id="changeUpdated">0</b></span>
-<span class="change-pill closed">下架 <b id="changeClosed">0</b></span>
-</div>
-<div id="changeList" class="change-list"></div>
 </section>
 
 <section class="panel">
@@ -51,9 +41,10 @@
   <div class="lead-head">
     <h2 id="leadTitle">新秋招公司雷达</h2>
     <div class="lead-summary">
-      <span>今日新增 <b id="leadTodayCount">0</b></span>
+      <span>本轮新增 <b id="leadBatchCount">0</b></span>
       <span>待核验 <b id="leadPendingCount">0</b></span>
       <span>已确认 <b id="leadConfirmedCount">0</b></span>
+      <span>已投 <b id="leadAppliedCount">0</b></span>
     </div>
   </div>
   <div class="lead-controls" aria-label="招聘线索筛选">
@@ -108,6 +99,11 @@
   <div id="otherGroup" class="group"><h3>⚪ 其他匹配岗位</h3><div id="otherJobs" class="jobs"></div></div>
   <div id="watchOnlyGroup" class="group"><h3>👁 观察名单 / 项目级 / 待进一步核验</h3><div id="watchJobs" class="jobs"></div></div>
 
+  <details class="history-panel">
+    <summary id="leadHistoryTitle">历史招聘事件（0）</summary>
+    <div id="leadHistoryList" class="lead-list history-lead-list" aria-live="polite"></div>
+  </details>
+
   <div class="group">
     <h3>👀 外企重点监控</h3>
     <div id="watchGrid" class="watch-grid"></div>
@@ -119,7 +115,7 @@
   </div>
 </section>
 
-<footer>JobRadar v1.2 Recruitment Leads · GitHub Pages-ready · 2026-08-22</footer>
+<footer>JobRadar v1.3 Recruitment Leads · GitHub Pages-ready · 2026-08-24</footer>
 </div>
 <script src="app.js"></script>
 </body>

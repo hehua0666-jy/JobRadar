@@ -1,7 +1,7 @@
 {
-  "version": "1.2",
-  "release_date": "2026-08-22",
+  "version": "1.3",
+  "release_date": "2026-08-24",
   "status": "stable",
-  "feature": "recruitment_leads",
+  "feature": "recruitment_lead_batches",
   "job_records": 85
 }

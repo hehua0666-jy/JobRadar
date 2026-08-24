@@ -1,9 +1,11 @@
 const STORAGE_KEY = 'jobradar_applied_v1';
 const VIEW_KEY = 'jobradar_view_v1';
+const LEAD_STORAGE_KEY = 'jobradarAppliedRecruitmentLeads';
 
 let JOBS = [];
 let RECRUITMENT_LEADS = [];
 let applied = new Set();
+let appliedRecruitmentLeads = new Set();
 let activeFilters = new Set();
 let activeLeadFilter = null;
 
@@ -16,6 +18,8 @@ function esc(s){
 function loadApplied(){
   try { applied = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')); }
   catch(e){ applied = new Set(); }
+  try { appliedRecruitmentLeads = new Set(JSON.parse(localStorage.getItem(LEAD_STORAGE_KEY) || '[]')); }
+  catch(e){ appliedRecruitmentLeads = new Set(); }
 }
 
 function isApplied(id){ return applied.has(id); }
@@ -35,10 +39,16 @@ function safeHttpUrl(value){
   }
 }
 
-function localDateString(){
-  const now = new Date();
-  const pad = value => String(value).padStart(2,'0');
-  return `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}`;
+function validLeadDate(value){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(value || '')) return '';
+  const [year,month,day] = value.split('-').map(Number);
+  const date = new Date(Date.UTC(year,month-1,day));
+  return date.getUTCFullYear() === year && date.getUTCMonth() === month-1 && date.getUTCDate() === day
+    ? value : '';
+}
+
+function latestLeadBatchDate(){
+  return RECRUITMENT_LEADS.map(lead => validLeadDate(lead.discovered_at)).filter(Boolean).sort().at(-1) || '';
 }
 
 function leadIsPending(lead){
@@ -58,34 +68,21 @@ function sortRecruitmentLeads(items){
   };
   return [...items].sort((a,b) =>
     (urgencyRank[b.urgency] || 0) - (urgencyRank[a.urgency] || 0) ||
-    Number(Boolean(b.is_new_company)) - Number(Boolean(a.is_new_company)) ||
     Number(b.match_score || 0) - Number(a.match_score || 0) ||
     dateValue(b).localeCompare(dateValue(a))
   );
 }
 
-function leadMatchesFilter(lead){
-  if(activeLeadFilter === 'new') return lead.is_new_company === true;
+function leadMatchesFilter(lead,latestDate){
+  if(activeLeadFilter === 'new') return !latestDate || lead.discovered_at === latestDate;
   if(activeLeadFilter === 'pending') return leadIsPending(lead);
   if(activeLeadFilter === 'confirmed') return leadIsConfirmed(lead);
   return true;
 }
 
-function renderRecruitmentLeads(){
-  const list = document.getElementById('leadList');
-  if(!list) return;
-
-  const set = (id,value) => {
-    const el = document.getElementById(id);
-    if(el) el.textContent = value;
-  };
-  set('leadTodayCount', RECRUITMENT_LEADS.filter(x=>x.discovered_at===localDateString()).length);
-  set('leadPendingCount', RECRUITMENT_LEADS.filter(leadIsPending).length);
-  set('leadConfirmedCount', RECRUITMENT_LEADS.filter(leadIsConfirmed).length);
-
-  const items = sortRecruitmentLeads(RECRUITMENT_LEADS).filter(leadMatchesFilter);
+function renderLeadRows(list,items,{history=false}={}){
   if(!items.length){
-    list.innerHTML = `<div class="empty">${RECRUITMENT_LEADS.length ? '当前筛选下没有招聘线索。' : '当前没有待处理的招聘线索。'}</div>`;
+    list.innerHTML = `<div class="empty">${history ? '暂无历史招聘事件。' : (RECRUITMENT_LEADS.length ? '当前筛选下没有招聘线索。' : '当前没有待处理的招聘线索。')}</div>`;
     return;
   }
 
@@ -98,8 +95,10 @@ function renderRecruitmentLeads(){
     const url = safeHttpUrl(lead.official_url) || safeHttpUrl(lead.source_url);
     const cities = Array.isArray(lead.cities) ? lead.cities.join('/') : '';
     const directions = Array.isArray(lead.directions) ? lead.directions.join('/') : '';
-    return `<div class="lead-row" title="${esc(lead.notes || '')}">
-      <span class="lead-new ${lead.is_new_company ? '' : 'muted'}">${lead.is_new_company ? 'NEW' : '跟进'}</span>
+    const isLeadApplied = appliedRecruitmentLeads.has(lead.id);
+    return `<div class="lead-row ${isLeadApplied ? 'applied-lead' : ''}" title="${esc(lead.notes || '')}">
+      <button class="lead-check" data-lead-id="${esc(lead.id)}" aria-label="${isLeadApplied ? '取消已处理或已投递标记' : '标记为已处理或已投递'}" aria-pressed="${isLeadApplied}"></button>
+      <span class="lead-new ${history ? 'muted' : ''}">${history ? esc(lead.discovered_at || '历史') : 'NEW'}</span>
       <b class="lead-company">${esc(lead.company)}</b>
       <span class="lead-name">${esc(lead.recruitment_name)}</span>
       <span class="lead-cities">${esc(cities || '城市待核实')}</span>
@@ -110,6 +109,49 @@ function renderRecruitmentLeads(){
       ${url ? `<a class="lead-link" href="${esc(url)}" target="_blank" rel="noopener">查看 ↗</a>` : '<span class="lead-link muted">无链接</span>'}
     </div>`;
   }).join('');
+}
+
+function bindLeadAppliedButtons(){
+  document.querySelectorAll('.lead-check').forEach(btn => {
+    btn.onclick = () => {
+      const id = btn.dataset.leadId;
+      appliedRecruitmentLeads.has(id) ? appliedRecruitmentLeads.delete(id) : appliedRecruitmentLeads.add(id);
+      localStorage.setItem(LEAD_STORAGE_KEY, JSON.stringify([...appliedRecruitmentLeads]));
+      renderRecruitmentLeads();
+    };
+  });
+}
+
+function renderRecruitmentLeads(){
+  const list = document.getElementById('leadList');
+  const historyList = document.getElementById('leadHistoryList');
+  if(!list || !historyList) return;
+
+  const set = (id,value) => {
+    const el = document.getElementById(id);
+    if(el) el.textContent = value;
+  };
+  const latestDate = latestLeadBatchDate();
+  const latestBatch = latestDate
+    ? RECRUITMENT_LEADS.filter(lead => lead.discovered_at === latestDate)
+    : [...RECRUITMENT_LEADS];
+  const history = latestDate
+    ? RECRUITMENT_LEADS.filter(lead => lead.discovered_at !== latestDate)
+    : [];
+  const historySorted = [...history].sort((a,b) =>
+    validLeadDate(b.discovered_at).localeCompare(validLeadDate(a.discovered_at)) ||
+    Number(b.match_score || 0) - Number(a.match_score || 0)
+  );
+
+  set('leadBatchCount', latestBatch.length);
+  set('leadPendingCount', latestBatch.filter(leadIsPending).length);
+  set('leadConfirmedCount', latestBatch.filter(leadIsConfirmed).length);
+  set('leadAppliedCount', latestBatch.filter(lead => appliedRecruitmentLeads.has(lead.id)).length);
+  set('leadHistoryTitle', `历史招聘事件（${history.length}）`);
+
+  renderLeadRows(list,sortRecruitmentLeads(latestBatch).filter(lead => leadMatchesFilter(lead,latestDate)));
+  renderLeadRows(historyList,historySorted,{history:true});
+  bindLeadAppliedButtons();
 }
 
 function initLeadFilters(){
@@ -135,6 +177,8 @@ async function loadRecruitmentLeads(){
   } catch(e){
     RECRUITMENT_LEADS = [];
     list.innerHTML = '<div class="empty">招聘线索加载失败，请稍后刷新页面。</div>';
+    const historyList = document.getElementById('leadHistoryList');
+    if(historyList) historyList.innerHTML = '<div class="empty">历史招聘事件加载失败。</div>';
   }
 }
 
@@ -378,20 +422,3 @@ async function init(){
 }
 
 init();
-async function renderChanges(){
-  const box=document.getElementById('changeList');
-  if(!box)return;
-  try{
-    const items=await fetchJson('changes.json?ts='+Date.now());
-    if(!Array.isArray(items)) throw new Error('变化数据格式无效');
-    const counts={new:0,updated:0,closed:0};
-    items.forEach(x=>counts[x.type]=(counts[x.type]||0)+1);
-    document.getElementById('changeNew').textContent=counts.new||0;
-    document.getElementById('changeUpdated').textContent=counts.updated||0;
-    document.getElementById('changeClosed').textContent=counts.closed||0;
-    const labels={new:'新增',updated:'更新',closed:'下架'};
-    if(!items.length){box.innerHTML='<div class="empty">当前没有检测到新增、更新或下架变化。</div>';return;}
-    box.innerHTML=items.slice(0,20).map(x=>`<div class="change-row"><span class="ctype">${labels[x.type]||x.type}</span><span><b>${esc(x.company)}</b> · ${esc(x.role)}</span>${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">查看 ↗</a>`:''}</div>`).join('');
-  }catch(e){box.innerHTML='<div class="empty">变化记录暂时无法加载。</div>';}
-}
-window.addEventListener('load',renderChanges);
