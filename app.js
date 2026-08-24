@@ -118,14 +118,15 @@ function bindLeadAppliedButtons(){
       appliedRecruitmentLeads.has(id) ? appliedRecruitmentLeads.delete(id) : appliedRecruitmentLeads.add(id);
       localStorage.setItem(LEAD_STORAGE_KEY, JSON.stringify([...appliedRecruitmentLeads]));
       renderRecruitmentLeads();
+      renderApplied();
     };
   });
 }
 
 function renderRecruitmentLeads(){
   const list = document.getElementById('leadList');
-  const historyList = document.getElementById('leadHistoryList');
-  if(!list || !historyList) return;
+  const archiveList = document.getElementById('leadArchiveList');
+  if(!list || !archiveList) return;
 
   const set = (id,value) => {
     const el = document.getElementById(id);
@@ -135,11 +136,13 @@ function renderRecruitmentLeads(){
   const latestBatch = latestDate
     ? RECRUITMENT_LEADS.filter(lead => lead.discovered_at === latestDate)
     : [...RECRUITMENT_LEADS];
-  const history = latestDate
+  const olderLeads = latestDate
     ? RECRUITMENT_LEADS.filter(lead => lead.discovered_at !== latestDate)
     : [];
-  const historySorted = [...history].sort((a,b) =>
+  const urgencyRank = {high:3,medium:2,low:1};
+  const olderSorted = [...olderLeads].sort((a,b) =>
     validLeadDate(b.discovered_at).localeCompare(validLeadDate(a.discovered_at)) ||
+    (urgencyRank[b.urgency] || 0) - (urgencyRank[a.urgency] || 0) ||
     Number(b.match_score || 0) - Number(a.match_score || 0)
   );
 
@@ -147,10 +150,10 @@ function renderRecruitmentLeads(){
   set('leadPendingCount', latestBatch.filter(leadIsPending).length);
   set('leadConfirmedCount', latestBatch.filter(leadIsConfirmed).length);
   set('leadAppliedCount', latestBatch.filter(lead => appliedRecruitmentLeads.has(lead.id)).length);
-  set('leadHistoryTitle', `历史招聘事件（${history.length}）`);
 
   renderLeadRows(list,sortRecruitmentLeads(latestBatch).filter(lead => leadMatchesFilter(lead,latestDate)));
-  renderLeadRows(historyList,historySorted,{history:true});
+  renderLeadRows(archiveList,olderSorted,{history:true});
+  document.getElementById('leadArchiveGroup')?.classList.toggle('hidden',!olderLeads.length);
   bindLeadAppliedButtons();
 }
 
@@ -174,11 +177,12 @@ async function loadRecruitmentLeads(){
     if(!Array.isArray(items)) throw new Error('招聘线索数据格式无效');
     RECRUITMENT_LEADS = items;
     renderRecruitmentLeads();
+    renderApplied();
   } catch(e){
     RECRUITMENT_LEADS = [];
     list.innerHTML = '<div class="empty">招聘线索加载失败，请稍后刷新页面。</div>';
-    const historyList = document.getElementById('leadHistoryList');
-    if(historyList) historyList.innerHTML = '<div class="empty">历史招聘事件加载失败。</div>';
+    const archiveList = document.getElementById('leadArchiveList');
+    if(archiveList) archiveList.innerHTML = '<div class="empty">近期招聘事件加载失败。</div>';
   }
 }
 
@@ -291,20 +295,26 @@ function renderApplied(){
   roleList.innerHTML = '';
 
   const selected = JOBS.filter(j => isApplied(j.id));
+  const selectedLeads = RECRUITMENT_LEADS.filter(lead => appliedRecruitmentLeads.has(lead.id));
   const counts = {};
   selected.forEach(j => counts[j.company] = (counts[j.company] || 0) + 1);
+  selectedLeads.forEach(lead => counts[lead.company] = (counts[lead.company] || 0) + 1);
 
   Object.entries(counts).forEach(([company, n]) => {
     companyList.insertAdjacentHTML('beforeend',
-      `<span class="company-chip">${esc(company)}<small>${n}岗</small></span>`);
+      `<span class="company-chip">${esc(company)}<small>${n}项</small></span>`);
   });
 
   selected.forEach(j => {
     roleList.insertAdjacentHTML('beforeend',
       `<span class="role-chip"><b>${esc(j.company)}</b> · ${esc(j.role)}</span>`);
   });
+  selectedLeads.forEach(lead => {
+    roleList.insertAdjacentHTML('beforeend',
+      `<span class="role-chip lead-role-chip"><b>${esc(lead.company)}</b> · ${esc(lead.recruitment_name)}<small>招聘项目</small></span>`);
+  });
 
-  empty.style.display = selected.length ? 'none' : 'block';
+  empty.style.display = selected.length || selectedLeads.length ? 'none' : 'block';
 }
 
 function renderStats(){
