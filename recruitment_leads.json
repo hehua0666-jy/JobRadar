@@ -727,5 +727,292 @@
     "match_score": 93,
     "is_new_company": true,
     "notes": "企业官方招聘系统明确列出2027届资格范围，并展示上海、北京、天津的软件算法类正式岗位，包括算法工程师、智能制造算法工程师、大数据工程师和应用程序开发工程师；同页还保留2026届资格范围，需按职位届别筛选并继续核验各岗位截止时间。"
+  },
+  {
+    "id": "goertek-2027-elite-campus",
+    "company": "歌尔股份 Goertek",
+    "recruitment_name": "歌尔集团2027届精英计划校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-06-01",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "杭州",
+      "深圳",
+      "南京",
+      "青岛"
+    ],
+    "directions": [
+      "算法研发",
+      "音频算法",
+      "声学研发",
+      "软件研发",
+      "芯片研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://goertek.hotjob.cn/",
+    "source_url": "https://goertek.hotjob.cn/",
+    "source_type": "企业官方招聘系统",
+    "evidence_grade": "A",
+    "status": "verified_recruitment",
+    "urgency": "high",
+    "match_score": 98,
+    "is_new_company": true,
+    "notes": "企业官方招聘系统当前明确列出2027届校招算法研发岗、声学研发岗、软件研发岗和芯片研发岗；高校就业网项目简章进一步明确精英计划面向2027届海内外硕博，算法方向含大模型、音频、视觉、具身智能，具体职位截止时间仍需逐岗确认。"
+  },
+  {
+    "id": "haier-2027-early-campus",
+    "company": "海尔集团",
+    "recruitment_name": "海尔集团2027校招提前批",
+    "recruitment_type": "提前批",
+    "discovered_at": "2026-08-24",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "上海",
+      "青岛"
+    ],
+    "directions": [
+      "机器学习与深度学习",
+      "多模态算法",
+      "工业互联网算法",
+      "AI应用",
+      "软件研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://maker.haier.net/client/campus/index",
+    "source_url": "https://maker.haier.net/client/campus/index",
+    "source_type": "企业官方招聘系统",
+    "evidence_grade": "A",
+    "status": "verified_recruitment",
+    "urgency": "high",
+    "match_score": 93,
+    "is_new_company": true,
+    "notes": "企业官方校招站明确展示海尔集团2027校招提前批，并有2027届GEDP算法工程师、工业互联网算法和多模态算法等正式岗位；当前可确认上海、青岛岗位，项目发布时间、统一截止时间及更多城市仍待核实。"
+  },
+  {
+    "id": "fortior-2027-campus",
+    "company": "峰岹科技 Fortior",
+    "recruitment_name": "峰岹科技2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-13",
+    "deadline": "待核实",
+    "cities": [
+      "深圳",
+      "上海",
+      "杭州",
+      "合肥",
+      "佛山",
+      "青岛"
+    ],
+    "directions": [
+      "电机控制算法",
+      "AI算法",
+      "模型强化训练",
+      "传感器应用",
+      "嵌入式软件"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.fortiortech.com/join/student",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2407275.htm",
+    "source_type": "高校就业网（含企业官方投递入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 91,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确为2027届正式校园招聘，列出电机控制算法、AI算法、模型强化训练、软件和嵌入式等岗位；企业官网校园招聘入口可访问，但官方页面未直接展示完整届别、岗位明细与截止时间，需继续逐岗核验。"
+  },
+  {
+    "id": "vanchip-2027-campus",
+    "company": "唯捷创芯 Vanchip",
+    "recruitment_name": "唯捷创芯2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-16",
+    "deadline": "2026-10-31",
+    "cities": [
+      "北京",
+      "上海",
+      "杭州",
+      "深圳",
+      "天津",
+      "成都",
+      "苏州"
+    ],
+    "directions": [
+      "射频前端芯片",
+      "光通信",
+      "卫星通信",
+      "集成电路设计",
+      "系统应用"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.vanchip.com/recruitment/Enrollment",
+    "source_url": "https://www.wondercv.com/xiaozhao/vanchip-2027-campus-recruitment-12540-b81caf/",
+    "source_type": "第三方校招平台（含企业官方校招入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 88,
+    "is_new_company": true,
+    "notes": "第三方校招信息明确项目面向2027届海内外毕业生，并列出射频、光通信、卫星通信与系统应用方向及2026年10月31日截止；企业官网校园招聘职位入口可访问，但届别与截止时间尚未在官网文本中直接核出，需继续复核。"
+  },
+  {
+    "id": "sgmicro-2027-campus",
+    "company": "圣邦微电子 SGMICRO",
+    "recruitment_name": "圣邦微电子2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-12",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "杭州",
+      "深圳",
+      "成都",
+      "武汉",
+      "苏州"
+    ],
+    "directions": [
+      "模拟与混合信号芯片",
+      "信号链",
+      "数字IC设计",
+      "磁传感器",
+      "芯片测试研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.sg-micro.com/cn/recruitment",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2407265.htm",
+    "source_type": "高校就业网（含企业官网与官方网申入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 84,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2027年全年毕业的国内外学生，列出信号链、数字IC、磁传感器和测试研发等正式岗位及多地城市；企业官网招聘主页和官方校招专题可访问，统一截止时间与岗位实时状态仍需确认。"
+  },
+  {
+    "id": "hongqing-2027-global-campus",
+    "company": "鸿擎科技",
+    "recruitment_name": "鸿擎科技2027全球校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-07",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "西安",
+      "雄安新区"
+    ],
+    "directions": [
+      "卫星通信",
+      "AI软件算法",
+      "姿轨控软件",
+      "星务软件",
+      "FPGA与嵌入式"
+    ],
+    "cohort": [
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://qcnhg4ksaiwt.jobs.feishu.cn/257870",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2407213.htm",
+    "source_type": "高校就业网（含企业官方招聘入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 90,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2026至2027年毕业的海内外硕博应届生，包含卫星通信、AI软件算法、姿轨控软件、星务软件、FPGA和嵌入式等正式岗位；企业官方飞书招聘入口可访问，具体岗位状态与截止时间仍需逐项复核。"
+  },
+  {
+    "id": "novasky-2027-campus",
+    "company": "华诺星空 NovaSky",
+    "recruitment_name": "华诺星空2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "长沙"
+    ],
+    "directions": [
+      "雷达信号处理",
+      "通信信号处理",
+      "毫米波感知",
+      "AI算法",
+      "雷达数据处理"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "http://job.novasky.cn/portal/exam-list",
+    "source_url": "https://myjob.dlmu.edu.cn/campus/view/id/868428",
+    "source_type": "高校就业网（含企业官网与招聘系统入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 97,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确为2027届校园招聘，列出雷达/通信/毫米波/GNSS信号处理、雷达数据处理、AI算法、FPGA和嵌入式等正式岗位；企业官网和招聘考试系统入口可访问，发布时间、完整工作城市与截止时间仍需核验。"
+  },
+  {
+    "id": "cosmx-2027-campus",
+    "company": "冠宇集团 COSMX",
+    "recruitment_name": "冠宇集团2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-21",
+    "deadline": "待核实",
+    "cities": [
+      "珠海",
+      "广州",
+      "嘉兴",
+      "重庆"
+    ],
+    "directions": [
+      "电池算法开发",
+      "AI应用",
+      "机器视觉",
+      "软件开发",
+      "数据开发与治理"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://cosmx.zhiye.com/Campus",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2407415.htm",
+    "source_type": "高校就业网（含企业官方招聘系统入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 86,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确2027届校园招聘已启动，电子与计算机类含电池算法、AI应用、机器视觉、软件和数据开发等正式岗位，工作地点覆盖珠海、广州、嘉兴和重庆；企业官方校招系统可访问，具体岗位状态和统一截止时间仍需核验。"
   }
 ]
