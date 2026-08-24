@@ -1014,5 +1014,452 @@
     "match_score": 86,
     "is_new_company": true,
     "notes": "高校就业网公告明确2027届校园招聘已启动，电子与计算机类含电池算法、AI应用、机器视觉、软件和数据开发等正式岗位，工作地点覆盖珠海、广州、嘉兴和重庆；企业官方校招系统可访问，具体岗位状态和统一截止时间仍需核验。"
+  },
+  {
+    "id": "nxp-2027-campus-china",
+    "company": "恩智浦半导体 NXP",
+    "recruitment_name": "恩智浦2027校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "待逐岗核验"
+    ],
+    "directions": [
+      "嵌入式软件",
+      "汽车电子",
+      "人工智能",
+      "通信与安全连接",
+      "半导体研发"
+    ],
+    "cohort": [
+      "2025届",
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "外企",
+    "official_url": "https://campus.51job.com/nxp/process.html",
+    "source_url": "https://campus.51job.com/nxp/process.html",
+    "source_type": "企业官方校招专题",
+    "evidence_grade": "A",
+    "status": "verified_recruitment",
+    "urgency": "high",
+    "match_score": 91,
+    "is_new_company": true,
+    "notes": "企业2027校招专题明确将应届生岗位与实习岗位分开，并确认正式应届岗位面向2025至2027届海内外高校毕业生；当前展示内容更多是嵌入式、汽车电子、AI及安全连接等业务或招聘方向，具体岗位方向、城市和截止时间仍需逐岗核验。"
+  },
+  {
+    "id": "schneider-electric-2027-autumn-campus",
+    "company": "施耐德电气 Schneider Electric",
+    "recruitment_name": "施耐德电气2027秋季校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-13",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "广州",
+      "西安",
+      "厦门"
+    ],
+    "directions": [
+      "AI应用",
+      "研发工程",
+      "电力电子",
+      "自动化与数字化",
+      "软件研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "外企",
+    "official_url": "https://careers.se.com/china?lang=zh-CN",
+    "source_url": "https://careers.se.com/china?lang=zh-CN",
+    "source_type": "企业官方招聘网站（与企业官方认证发布交叉核验）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 84,
+    "is_new_company": true,
+    "notes": "企业中国招聘官网及官方认证账号信息可确认2027届秋招提前批项目真实存在；但当前直接一手证据不足以支撑记录中的全部城市以及AI、软件等具体岗位明细，需在官方投递系统逐岗核验后再拆解。"
+  },
+  {
+    "id": "pangomicro-2027-campus",
+    "company": "紫光同创 PangoMicro",
+    "recruitment_name": "紫光同创2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "深圳"
+    ],
+    "directions": [
+      "FPGA与可编程逻辑",
+      "IC设计",
+      "EDA工具研发",
+      "芯片验证",
+      "混合信号设计"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://campus.51job.com/Pango/job.html",
+    "source_url": "https://campus.51job.com/Pango/job.html",
+    "source_type": "企业官方校招专题",
+    "evidence_grade": "A",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 87,
+    "is_new_company": true,
+    "notes": "企业官方校招专题明确面向2027届海内外本硕博毕业生，并展示IC设计、EDA工具和应用测试等岗位类别；当前部分职位描述仍出现占位文本，需继续核验实际岗位内容、城市和截止时间后再拆解。"
+  },
+  {
+    "id": "pensun-2027-campus",
+    "company": "鹏新旭技术",
+    "recruitment_name": "鹏新旭2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-24",
+    "deadline": "待核实",
+    "cities": [
+      "深圳"
+    ],
+    "directions": [
+      "AI工程",
+      "OPC与工艺研发",
+      "智能制造",
+      "IT工程",
+      "集成电路制造"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "央国企事业单位",
+    "official_url": "https://www.pensun.com/",
+    "source_url": "https://career.sustech.edu.cn/detail/online?id=3540734",
+    "source_type": "高校就业网（与企业官网校招联系方式交叉核验）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 83,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2027届全球硕博，列出AI工程师、OPC工程师、IT工程师和智能制造等正式岗位；企业官网确认校招联系方式，但未直接展示本轮岗位和统一截止时间，需继续核验官方投递入口的实时职位。"
+  },
+  {
+    "id": "hygon-2027-campus",
+    "company": "海光信息 Hygon",
+    "recruitment_name": "海光信息2027校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-17",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "成都",
+      "苏州",
+      "天津",
+      "深圳",
+      "西安",
+      "郑州",
+      "青岛"
+    ],
+    "directions": [
+      "CPU与GPU架构",
+      "GPU软件开发",
+      "大模型与算法软件优化",
+      "芯片设计与验证",
+      "系统软件"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://campus.51job.com/hygon",
+    "source_url": "https://career.hebut.edu.cn/home/correcruit/content/id/79147.html",
+    "source_type": "高校就业网（含企业官方校招专题与官方投递说明）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 96,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确海光信息2027校招已启动，面向集成电路、电子信息、计算机和通信等专业，岗位覆盖CPU/GPU软件、大模型与算法优化、芯片架构设计验证等方向；企业官方校招专题可访问，但当前届别岗位页和截止时间仍需复核。"
+  },
+  {
+    "id": "anker-2027-global-campus",
+    "company": "安克创新 Anker Innovations",
+    "recruitment_name": "安克创新2027届全球校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-18",
+    "deadline": "待核实",
+    "cities": [
+      "深圳",
+      "长沙",
+      "北京",
+      "苏州",
+      "上海",
+      "杭州",
+      "西安"
+    ],
+    "directions": [
+      "AI应用",
+      "算法研发",
+      "软件开发",
+      "智能硬件",
+      "声学产品研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://career.anker.com.cn/universities/recruitment/",
+    "source_url": "https://career.sustech.edu.cn/detail/online?id=3541413",
+    "source_type": "高校就业网（含企业官方校招入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 87,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确本轮于2026年8月18日启动，面向2026年9月至2027年12月毕业的2027届全球应届生，开放研发技术、数据开发及AI应用等正式方向；声学产品研发仅作为高匹配待逐岗核验方向，不作为已确认的当前岗位方向，企业官方入口中的2027具体岗位和截止时间仍需继续核验。"
+  },
+  {
+    "id": "cmbnt-2027-autumn-campus",
+    "company": "招银网络科技",
+    "recruitment_name": "招商银行·招银网络科技2027秋季校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-07-31",
+    "deadline": "2026-09-20",
+    "cities": [
+      "深圳",
+      "杭州",
+      "成都"
+    ],
+    "directions": [
+      "机器学习与深度学习",
+      "大语言模型",
+      "语音与图像处理",
+      "后端开发",
+      "测试与运维研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://cmbnt.cmbchina.com/",
+    "source_url": "https://career.hebut.edu.cn/home/correcruit/content/id/79061.html",
+    "source_type": "高校就业网（含企业官网投递入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 91,
+    "is_new_company": true,
+    "notes": "高校就业网公告于2026年7月31日发布并明确面向2027届正式岗位，7月30日为网申启动日；岗位包含算法、后端、前端、测试技术开发和运维研发，算法方向覆盖机器学习、深度学习、大语言模型、语音交互和图像处理，第二批网申标注至2026年9月20日18时。"
+  },
+  {
+    "id": "nlscan-2027-campus",
+    "company": "新大陆自动识别 Newland AIDC",
+    "recruitment_name": "新大陆自动识别2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-07-24",
+    "deadline": "待核实",
+    "cities": [
+      "福州"
+    ],
+    "directions": [
+      "计算机视觉",
+      "人工智能算法",
+      "嵌入式软件",
+      "射频与通信",
+      "硬件研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.nlscan.com/campusrecruitment.html",
+    "source_url": "https://career.hebut.edu.cn/home/correcruit/content/id/79016.html",
+    "source_type": "高校就业网（与企业官网校园招聘页交叉核验）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 89,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2026年9月至2027年12月毕业生，开放计算机视觉、AI算法、嵌入式软件和硬件等正式岗位；企业官网校园招聘页可访问并展示相同技术方向，但岗位标题仍标注25届，需核验2027入口刷新与截止时间。"
+  },
+  {
+    "id": "envision-aesc-2027-campus",
+    "company": "远景动力 Envision AESC",
+    "recruitment_name": "远景动力2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-20",
+    "deadline": "待核实",
+    "cities": [
+      "上海",
+      "其他城市待逐岗核验"
+    ],
+    "directions": [
+      "研发与工程技术",
+      "电池与储能研发",
+      "软件与数字化（待逐岗核验）",
+      "AI与智能控制（待逐岗核验）",
+      "电力电子（待逐岗核验）"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://envision-career.com/",
+    "source_url": "https://career.hebut.edu.cn/home/correcruit/content/id/79218.html",
+    "source_type": "高校就业网（含企业官方校招入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 82,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2027届本硕博，正式校招覆盖研发、工程技术、解决方案等200余岗位；远景官方校招入口可访问，但当前公开页未直接展示本轮完整岗位清单，具体招聘城市以及AI、大模型、智能控制等高匹配方向均需逐岗核验。"
+  },
+  {
+    "id": "envision-energy-2027-autumn-campus",
+    "company": "远景能源 Envision Energy",
+    "recruitment_name": "远景能源2027届秋季校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-08-24",
+    "published_at": "2026-08-20",
+    "deadline": "待核实",
+    "cities": [
+      "上海",
+      "其他城市待核实"
+    ],
+    "directions": [
+      "人工智能与能源",
+      "智能控制",
+      "软件研发",
+      "电气与电力电子",
+      "自动化研发"
+    ],
+    "cohort": [
+      "2025届",
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://app.mokahr.com/m/campus_apply/envisiongroup/182094",
+    "source_url": "https://career.nankai.edu.cn/correcruit/content/id/116772.html",
+    "source_type": "高校就业网（含企业官方校招入口）",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 85,
+    "is_new_company": true,
+    "notes": "高校就业网公告明确面向2027届本硕博，并说明部分岗位接受2025年1月至2026年12月毕业生，岗位覆盖前沿技术、研发、产品与工程等方向；企业官方校招入口可访问，但其他招聘城市及具体AI能源、控制和软件岗位仍需逐岗核验，统一截止时间待核实。"
+  },
+  {
+    "id": "tme-2027-campus",
+    "company": "腾讯音乐娱乐 TME",
+    "recruitment_name": "腾讯音乐娱乐集团2027校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "待核实",
+    "deadline": "招满即止",
+    "cities": [
+      "深圳",
+      "北京",
+      "广州"
+    ],
+    "directions": [
+      "音频算法与三维声场",
+      "多媒体算法",
+      "软件研发",
+      "数据与推荐算法",
+      "音乐科技"
+    ],
+    "cohort": [
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://join.tencentmusic.com/campus/",
+    "source_url": "https://join.tencentmusic.com/campus/faq/",
+    "source_type": "企业官方招聘网站",
+    "evidence_grade": "A",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 94,
+    "is_new_company": true,
+    "notes": "企业官方校招FAQ明确本轮面向2026年1月至2027年12月毕业生，正式应届岗位与实习入口分开且不设统一网申截止、招满即止；普通校园招聘与技术大咖为两个不同项目，本记录仅对应普通校招，具体招聘城市和实时开放岗位仍需在投递系统逐岗核验。"
+  },
+  {
+    "id": "tme-2027-tech-master",
+    "company": "腾讯音乐娱乐 TME",
+    "recruitment_name": "腾讯音乐娱乐集团2027技术大咖项目",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "待核实"
+    ],
+    "directions": [
+      "音频与视频多模态",
+      "语音技术",
+      "大模型",
+      "机器学习",
+      "自然语言处理"
+    ],
+    "cohort": [
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://join.tencentmusic.com/master/",
+    "source_url": "https://join.tencentmusic.com/master/",
+    "source_type": "企业官方专项招聘页面",
+    "evidence_grade": "A",
+    "status": "verified_recruitment",
+    "urgency": "high",
+    "match_score": 99,
+    "is_new_company": false,
+    "notes": "企业官方专项页面确认这是独立校园招聘项目，面向2026年1月至2027年12月毕业的博士生，前瞻课题明确包含图像/音频/视频多模态理解与生成、大模型、语音和机器学习；工作城市和截止时间仍待官方岗位页确认。"
+  },
+  {
+    "id": "microsate-2027-campus",
+    "company": "中国科学院微小卫星创新研究院",
+    "recruitment_name": "中国科学院微小卫星创新研究院2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-08-24",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "上海"
+    ],
+    "directions": [
+      "卫星总体",
+      "电子通信",
+      "计算机软件",
+      "控制算法",
+      "嵌入式与FPGA"
+    ],
+    "cohort": [
+      "2026届",
+      "2027届"
+    ],
+    "company_type": "央国企事业单位",
+    "official_url": "https://www.microsate.cas.cn/",
+    "source_url": "https://xjh.niuqizp.com/xjhview-7UwszNzC5.html",
+    "source_type": "第三方校招平台（企业官网未见本轮公告）",
+    "evidence_grade": "C",
+    "status": "discovered",
+    "urgency": "medium",
+    "match_score": 93,
+    "is_new_company": true,
+    "notes": "当前只有第三方校招平台提供本轮项目线索，称面向2027届国内外硕博及2026届未就业博士，方向包含电子通信、计算机软件和控制；研究院官网截至本次核验尚未出现对应2027校招公告或官方投递页，仅作为高匹配待核验线索保留。"
   }
 ]
