@@ -72,6 +72,7 @@
       <button class="filter" data-filter="notapplied">未投递</button>
       <button class="filter" data-filter="appliedonly">已投递</button>
       <button class="filter" data-filter="positiononly">具体岗位</button>
+      <button class="filter" data-filter="projectonly">招聘项目</button>
       <button class="filter" data-filter="verifiedonly">官网A级核验</button>
       <button class="filter" data-filter="signalfit">语音/音频/信号处理</button>
       <button class="filter" data-filter="ai">AI相关</button>
@@ -90,11 +91,6 @@
     </div>
     <div class="counter">当前显示 <b id="visibleCount">0</b> / <span id="visibleTotal">0</span> 条；筛选可组合。</div>
     <div id="jobsLoadError" class="empty hidden" role="alert"></div>
-  </div>
-
-  <div id="leadArchiveGroup" class="group">
-    <h3>📌 近期招聘事件</h3>
-    <div id="leadArchiveList" class="lead-list archive-lead-list" aria-live="polite"></div>
   </div>
 
   <div id="priorityGroup" class="group"><h3>🔵 优先投递</h3><div id="priorityJobs" class="jobs"></div></div>
