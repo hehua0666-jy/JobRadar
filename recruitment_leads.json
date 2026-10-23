@@ -6235,5 +6235,417 @@
     "match_score": 99,
     "is_new_company": true,
     "notes": "官方职位页明确职位ID A08031、北京、校招、正式、2027校园招聘，方向为RAG/Agent、大模型应用、搜索推荐与NLP。页面未提供可靠发布日期和截止时间，均保留待核实。"
+  },
+  {
+    "id": "360-2027-global-campus",
+    "company": "360集团",
+    "recruitment_name": "360集团2027全球校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-10-23",
+    "published_at": "2026-10-22",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海"
+    ],
+    "directions": [
+      "AI大模型算法",
+      "视觉算法/AIGC/多模态",
+      "AI应用与Agent开发",
+      "智能化漏洞挖掘",
+      "大数据研发"
+    ],
+    "cohort": [
+      "2027届（2026-11至2027-12毕业）"
+    ],
+    "company_type": "私企",
+    "official_url": "https://campus.360.cn/",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2461081.htm",
+    "source_type": "华中科技大学就业网完整招聘简章与360官方校招入口交叉核验",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 97,
+    "is_new_company": true,
+    "notes": "高校就业网完整简章明确2027届正式校招，算法类含安全大模型、广告、AIGC和多模态，开发类含AI应用与Agent。简章称项目9月启动，2026-10-22仅为本来源发布日期，不冒充官网启动日；统一截止时间待官方入口逐岗核验。"
+  },
+  {
+    "id": "sse-tech-2027-campus",
+    "company": "上交所技术有限责任公司",
+    "recruitment_name": "上交所技术有限责任公司2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-10-23",
+    "published_at": "2026-10-14",
+    "deadline": "招满即止",
+    "cities": [
+      "上海"
+    ],
+    "directions": [
+      "AI中台与AI场景落地",
+      "软件开发/数据中台",
+      "机器学习/RAG/Agent",
+      "自动化测试",
+      "智算中心与大数据平台"
+    ],
+    "cohort": [
+      "2027届",
+      "尚未就业且处于择业期的2026届"
+    ],
+    "company_type": "央国企事业单位",
+    "official_url": "https://www.sse.com.cn/aboutus/recruitment/stocom/c/c_20261014_10834663.shtml",
+    "source_url": "https://www.sse.com.cn/aboutus/recruitment/stocom/c/c_20261014_10834663.shtml",
+    "source_type": "上海证券交易所官网招聘公告",
+    "evidence_grade": "A",
+    "status": "verified_recruitment",
+    "urgency": "high",
+    "match_score": 96,
+    "is_new_company": true,
+    "notes": "上交所官网公告直接确认项目、届别、上海工作地和招满即止规则。开发及产品类明确参与AI中台、数据中台、机器学习、RAG与Agent场景，另有测试、运维和信息技术治理类；后续仍需按官方网申系统核对岗位余量。"
+  },
+  {
+    "id": "china-unidata-2027-campus",
+    "company": "中国数联物流信息有限公司",
+    "recruitment_name": "中国数联2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-10-23",
+    "published_at": "2026-10-22",
+    "deadline": "待核实",
+    "cities": [
+      "上海",
+      "重庆",
+      "京津冀",
+      "粤港澳"
+    ],
+    "directions": [
+      "技术数据方向管培生",
+      "研究工程师",
+      "软件开发/数据开发",
+      "信息安全",
+      "云运维"
+    ],
+    "cohort": [
+      "2027届应届毕业生"
+    ],
+    "company_type": "央国企事业单位",
+    "official_url": "https://www.chinaunidata.com/join-us/campus-recruitment.html",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2461089.htm",
+    "source_type": "中国数联官网校园招聘页与华中科技大学就业网完整公告交叉核验",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 91,
+    "is_new_company": true,
+    "notes": "首家数据科技央企的2027届正式校招已确认，技术岗位覆盖研究、软件、数据、信息安全与云运维，工作地覆盖上海、重庆、京津冀和粤港澳等。官网校园招聘页当前以图片承载项目内容，具体岗位和统一截止时间需继续在投递系统核验。"
+  },
+  {
+    "id": "numbers-law-2027-campus",
+    "company": "大数极限 Numbers Law",
+    "recruitment_name": "大数极限2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-10-23",
+    "published_at": "2026-10-19",
+    "deadline": "待核实",
+    "cities": [
+      "广东",
+      "四川"
+    ],
+    "directions": [
+      "信号处理与数据融合算法",
+      "伺服控制与信道编码",
+      "DSP/FPGA/嵌入式",
+      "SoC设计与验证",
+      "高速混合信号硬件"
+    ],
+    "cohort": [
+      "2027届硕士/博士"
+    ],
+    "company_type": "私企",
+    "official_url": "https://xyz.51job.com/consumer/pc/home/index?ctmid=9603894",
+    "source_url": "https://career.nankai.edu.cn/correcruit/content/id/119896.html",
+    "source_type": "南开大学就业网企业完整招聘简章与企业专属前程无忧校招入口交叉核验",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 99,
+    "is_new_company": true,
+    "notes": "正式校招简章明确算法岗研发信号处理、数据融合及伺服/定位信道编码，并要求LDPC、Matlab/Python/C++等能力，另有DSP/FPGA相关控制、嵌入式和SoC岗位。工作地域来源仅标广东、四川，具体城市与截止时间不作推断。"
+  },
+  {
+    "id": "amec-2027-dengfeng-campus",
+    "company": "中微公司 AMEC",
+    "recruitment_name": "中微公司2027登峰计划校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-10-23",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "上海",
+      "北京",
+      "深圳",
+      "成都",
+      "武汉",
+      "合肥",
+      "南昌",
+      "广州",
+      "厦门",
+      "泉州"
+    ],
+    "directions": [
+      "半导体设备研发",
+      "软件/控制研发（待逐岗核验）",
+      "公共工程研发",
+      "智能制造"
+    ],
+    "cohort": [
+      "2027届",
+      "部分岗位接受2026届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://app.mokahr.com/campus_apply/amec/4362#/",
+    "source_url": "https://job.hust.edu.cn/extxjh/181790046028779.do",
+    "source_type": "华中科技大学宣讲会完整招聘简章与中微公司官方Moka校招入口交叉核验",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 87,
+    "is_new_company": true,
+    "notes": "招聘简章明确面向2027届正式校招，部分岗位也接受2026届，覆盖设备研发、公共工程研发、智能制造及子公司岗位。当前来源未展示逐岗技术明细和统一截止时间，因此不把企业业务方向直接当作开放岗位方向。"
+  },
+  {
+    "id": "htffund-2027-ai-campus",
+    "company": "汇添富基金",
+    "recruitment_name": "汇添富基金2027届校园招聘（AI算法与信息技术方向）",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-10-23",
+    "published_at": "2026-10-22",
+    "deadline": "待核实",
+    "cities": [
+      "上海"
+    ],
+    "directions": [
+      "AI算法",
+      "NLP/推荐/时序预测",
+      "RAG/Agent/NL2SQL",
+      "模型训练与推理优化",
+      "信息技术工程"
+    ],
+    "cohort": [
+      "2027届硕士/博士"
+    ],
+    "company_type": "私企",
+    "official_url": "https://htffund.zhiye.com/Campus",
+    "source_url": "https://career.nankai.edu.cn/correcruit/content/id/120016.html",
+    "source_type": "南开大学就业网具体正式岗位与汇添富官方校园招聘入口交叉核验",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 95,
+    "is_new_company": true,
+    "notes": "高校职位页明确助理AI算法工程师为2027届正式岗位，职责覆盖模型训练部署、NLP、推荐、时序预测、RAG、Agent和NL2SQL；同页另列2027届助理信息技术工程师。项目统一截止时间及其他岗位需在官方入口继续核验。"
+  },
+  {
+    "id": "nokov-2027-campus",
+    "company": "北京度量科技 NOKOV",
+    "recruitment_name": "北京度量科技2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-10-23",
+    "published_at": "2026-09-16",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "深圳",
+      "武汉",
+      "西安"
+    ],
+    "directions": [
+      "算法工程师",
+      "信号与信息处理",
+      "具身动作重定向",
+      "C++/Python开发",
+      "嵌入式与硬件测试"
+    ],
+    "cohort": [
+      "2027届（2026-09至2027-12毕业）"
+    ],
+    "company_type": "私企",
+    "official_url": "https://vip.pinpin.com/26xiaozhao/home",
+    "source_url": "https://job.hust.edu.cn/zpinfo1/2436257.htm",
+    "source_type": "华中科技大学就业网企业完整招聘简章与企业投递入口交叉核验",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "high",
+    "match_score": 96,
+    "is_new_company": true,
+    "notes": "正式校招简章明确算法岗接受信号与信息处理背景，Python岗涉及机器人动捕数据、深度学习与具身动作重定向，并有C++、嵌入式和硬件测试岗位。2026-09-16为较早高校公告日期，10月22日为另一高校转载日期，不视为新一轮启动。"
+  },
+  {
+    "id": "cfmee-2027-campus",
+    "company": "芯碁微装 CFMEE",
+    "recruitment_name": "芯碁微装2027届校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-10-23",
+    "published_at": "待核实",
+    "deadline": "待核实",
+    "cities": [
+      "合肥"
+    ],
+    "directions": [
+      "计算光刻算法",
+      "AI应用工程",
+      "FPGA/信号处理",
+      "软件开发",
+      "光机电系统研发"
+    ],
+    "cohort": [
+      "2027届"
+    ],
+    "company_type": "私企",
+    "official_url": "https://cfmee.zhiye.com/campus",
+    "source_url": "https://cfmee.zhiye.com/campus/jobs",
+    "source_type": "芯碁微装官方校园招聘职位系统",
+    "evidence_grade": "A",
+    "status": "verified_recruitment",
+    "urgency": "high",
+    "match_score": 97,
+    "is_new_company": true,
+    "notes": "官方校招系统当前直接列出2027届全职职位，含计算光刻、AI应用、FPGA、软件、光学和系统工程等；职位发布日期分布在8月至9月，无法据此确定统一项目启动日，故published_at和统一截止时间保留待核实。"
+  },
+  {
+    "id": "starpower-2027-campus",
+    "company": "斯达半导 StarPower",
+    "recruitment_name": "斯达半导2027年度校园招聘",
+    "recruitment_type": "校园招聘",
+    "discovered_at": "2026-10-23",
+    "published_at": "2026-10-22",
+    "deadline": "待核实",
+    "cities": [
+      "上海",
+      "苏州",
+      "天津",
+      "武汉",
+      "深圳"
+    ],
+    "directions": [
+      "器件研发/芯片测试",
+      "版图与电路仿真",
+      "MCU架构与算法",
+      "上位机软件开发",
+      "自动化与电子研发"
+    ],
+    "cohort": [
+      "2027届本硕博"
+    ],
+    "company_type": "私企",
+    "official_url": "https://app.mokahr.com/m/campus-recruitment/powersemi/101981",
+    "source_url": "https://eie.scu.edu.cn/info/1057/15620.htm",
+    "source_type": "四川大学电子信息学院完整招聘简章与斯达半导官方Moka入口交叉核验",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 88,
+    "is_new_company": true,
+    "notes": "简章明确面向2027届正式招聘，覆盖功率半导体器件研发、芯片测试、版图、电路仿真、软件与自动化；集团另一官方Moka项目（https://app.mokahr.com/campus-recruitment/powersemi/145065?locale=zh-CN）及天津大学招聘材料（https://job.tju.edu.cn/recruitment/content/type/2/id/6504.html）明确MCU架构与算法方向，工作地点为上海、苏州、天津、武汉、深圳，cities仅保留该招聘材料明确支持的城市，未将企业所在地作为岗位城市。2026-10-22为本次高校页面发布日期，统一网申截止待核实。"
+  },
+  {
+    "id": "didi-2027-autumn-campus",
+    "company": "滴滴 DiDi",
+    "recruitment_name": "滴滴2027届秋季校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-10-23",
+    "published_at": "2026-08-13",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "上海",
+      "广州",
+      "杭州",
+      "深圳",
+      "成都"
+    ],
+    "directions": [
+      "算法",
+      "机器人",
+      "数据与安全技术",
+      "软件工程",
+      "金融模型"
+    ],
+    "cohort": [
+      "2027届（2026-09至2027-08毕业）"
+    ],
+    "company_type": "私企",
+    "official_url": "https://app.mokahr.com/campus-recruitment/didiglobal/96064",
+    "source_url": "https://app.mokahr.com/campus-recruitment/didiglobal/96064",
+    "source_type": "滴滴官方Moka校园招聘专题",
+    "evidence_grade": "A",
+    "status": "verified_recruitment",
+    "urgency": "high",
+    "match_score": 96,
+    "is_new_company": true,
+    "notes": "官方专题明确为27届秋招；香港中文大学（深圳）职业规划与发展处全职招聘条目（https://career.cuhk.edu.cn/job/search?city=&d_category=&d_industry=&d_skill=44&domain=careercuhk&nature=&page=24&title=&title_type=1）明确该项目发布时间为2026-08-13，岗位覆盖工程、算法、机器人、数据和安全技术等。当前官网仍可访问，但项目统一截止和具体岗位余量需实时核验。"
+  },
+  {
+    "id": "sina-weibo-2027-tech-campus",
+    "company": "新浪与微博",
+    "recruitment_name": "新浪与微博2027届技术校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-10-23",
+    "published_at": "2026-08-20",
+    "deadline": "待核实",
+    "cities": [
+      "北京",
+      "杭州等（待逐岗核验）"
+    ],
+    "directions": [
+      "技术研发",
+      "AI/算法方向（待逐岗核验）",
+      "推荐与广告技术（待逐岗核验）",
+      "大模型与Agent（待逐岗核验）"
+    ],
+    "cohort": [
+      "2027届（2026-09至2027-08毕业）"
+    ],
+    "company_type": "私企",
+    "official_url": "https://career.sina.com.cn/campus-recruitment/sina/43536",
+    "source_url": "https://career.sina.com.cn/campus-recruitment/sina/43536",
+    "source_type": "新浪官方校园招聘专题与官方招聘微博技术校招公告",
+    "evidence_grade": "B",
+    "status": "needs_role_review",
+    "urgency": "medium",
+    "match_score": 91,
+    "is_new_company": true,
+    "notes": "官方校招专题明确新浪与微博2027届校园招聘已启动，官方招聘账号8月20日另确认技术校招专项及目标届别。公开页面未稳定展示本轮正式技术岗位清单，算法细分方向仅作待核验提示，不沿用暑期实习岗位充当正式岗位。"
+  },
+  {
+    "id": "njtf-2026-autumn-campus",
+    "company": "南京天洑软件",
+    "recruitment_name": "南京天洑软件2026秋季校园招聘",
+    "recruitment_type": "秋招",
+    "discovered_at": "2026-10-23",
+    "published_at": "2026-09-28",
+    "deadline": "待核实",
+    "cities": [
+      "南京"
+    ],
+    "directions": [
+      "优化算法",
+      "物理AI/工业AI",
+      "世界模型与空间智能",
+      "科学机器学习",
+      "C++/Python软件研发"
+    ],
+    "cohort": [
+      "届别待核实"
+    ],
+    "company_type": "私企",
+    "official_url": "https://www.njtf.cn/recruit.html",
+    "source_url": "https://career.nankai.edu.cn/correcruit/content/id/119354.html",
+    "source_type": "企业官网当前招聘页、国家大学生就业服务平台全职职位与高校就业网完整简章交叉核验",
+    "evidence_grade": "C",
+    "status": "discovered",
+    "urgency": "medium",
+    "match_score": 96,
+    "is_new_company": true,
+    "notes": "高校与国家大学生就业服务平台在9月底至10月仍发布并更新全职校招岗位，含优化算法、AI算法、物理AI、世界模型和软件研发；企业官网也列有对应岗位。“2026秋季校园招聘”只能确认招聘季名称，不能直接证明面向2026届毕业生；因毕业时间窗口未明确，先按C级discovered保留，需优先核验届别与当前投递状态。"
   }
 ]
